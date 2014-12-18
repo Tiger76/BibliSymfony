@@ -17,6 +17,7 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="BaseBundle">BibliSymfony\BaseBundle\BaseBundle</parameter>
+      <parameter key="FilmBundle">BibliSymfony\FilmBundle\FilmBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -2975,6 +2976,10 @@
       <call method="addPath">
         <argument>C:\wamp\www\BibliSymfony\src\BibliSymfony\BaseBundle/Resources/views</argument>
         <argument>Base</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\wamp\www\BibliSymfony\src\BibliSymfony\FilmBundle/Resources/views</argument>
+        <argument>Film</argument>
       </call>
       <call method="addPath">
         <argument>C:\wamp\www\BibliSymfony\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>

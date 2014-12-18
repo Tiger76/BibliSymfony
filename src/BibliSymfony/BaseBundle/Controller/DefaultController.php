@@ -6,8 +6,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function loginAction()
+    {
+        return $this->render('BaseBundle:Default:login.html.twig');
+    }
+    
+    public function accueilAction()
+    {
+        return $this->render('BaseBundle:Default:accueil.html.twig');
+    }
+    
+    /*public function gestionUtilisateursAction()
     {
         return $this->render('BaseBundle:Default:index.html.twig', array('name' => $name));
-    }
+    }*/
 }

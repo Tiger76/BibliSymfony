@@ -1,0 +1,12 @@
+cd1907,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/,1418899127,
+b67ae1,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/accueil,1418899153,81b236
+81b236,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/accueil,1418899153,
+12d615,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/accueil,1418899170,53e5fa
+53e5fa,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/accueil,1418899170,
+eeaf21,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/accueil,1418899192,
+a797ba,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/films.jpg,1418899196,f26378
+9f043f,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/categs.jpg,1418899196,ef19e3
+f26378,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/films.jpg,1418899197,
+ef19e3,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/categs.jpg,1418899197,
+cc2583,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/utili.jpg,1418899197,0266d1
+0266d1,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/utili.jpg,1418899198,

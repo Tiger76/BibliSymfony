@@ -1,3 +1,11 @@
-base_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: BaseBundle:Default:index }
+bibliSymfony_base_accueil:
+    path:     /accueil
+    defaults: { _controller: BaseBundle:Default:accueil }
+    
+bibliSymfony_base_users:
+    path:     /users
+    defaults: { _controller: BaseBundle:Default:gestionUtilisateurs }
+
+bibliSymfony_base_login:
+    path:     /
+    defaults: { _controller: BaseBundle:Default:login }
