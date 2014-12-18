@@ -6,8 +6,26 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function categorieFilmAction()
     {
         return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        
+    }
+    
+     public function ficheFilmAction()
+    {
+        return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        
+    }
+    
+     public function gestionFilmsAction()
+    {
+        return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        
+    }
+    public function gestionDifBaAction()
+    {
+        return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        
     }
 }

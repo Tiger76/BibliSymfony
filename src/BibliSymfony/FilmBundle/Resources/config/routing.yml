@@ -1,3 +1,16 @@
 film_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: FilmBundle:Default:index }
+    path:     /{id}
+    defaults: { _controller: FilmBundle:Default:ficheFilm }
+    
+    film_homepage:
+    path:     /categorie
+    defaults: { _controller: FilmBundle:Default:categorieFilm }
+    
+    film_homepage:
+    path:     /liste
+    defaults: { _controller: FilmBundle:Default:gestionFilms }
+    
+    film_homepage:
+    path:     /gestionBa
+    defaults: { _controller: FilmBundle:Default:gestionBa }
+    
