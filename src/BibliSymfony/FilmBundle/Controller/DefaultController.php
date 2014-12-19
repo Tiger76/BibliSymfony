@@ -8,24 +8,24 @@ class DefaultController extends Controller
 {
     public function categorieFilmAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('FilmBundle:Default:index.html.twig');
         
     }
     
      public function ficheFilmAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('FilmBundle:Default:index.html.twig');
         
     }
     
      public function gestionFilmsAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('FilmBundle:Default:index.html.twig');
         
     }
     public function gestionDifBaAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('FilmBundle:Default:index.html.twig');
         
     }
 }

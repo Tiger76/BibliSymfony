@@ -1,3 +1,17 @@
+<<<<<<< HEAD
 be6f2b,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/,1418993524,
 5d1f6e,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/,1418996106,
 7f0aca,::1,GET,http://localhost/BibliSymfony/web/app_dev.php/,1418996112,
+=======
+<<<<<<< HEAD
+b9d80d,127.0.0.1,GET,http://127.0.0.1/BibliSymfony/web/app_dev.php/,1418995688,
+95b6d2,127.0.0.1,GET,http://127.0.0.1/BibliSymfony/web/app_dev.php/,1418995693,
+09cfd3,127.0.0.1,GET,http://127.0.0.1/BibliSymfony/web/app_dev.php/,1418995849,
+61c8a0,127.0.0.1,GET,http://127.0.0.1/BibliSymfony/web/app_dev.php/,1418995853,
+e70884,127.0.0.1,GET,http://127.0.0.1/BibliSymfony/web/app_dev.php/,1418996228,
+f27769,127.0.0.1,GET,http://127.0.0.1/BibliSymfony/web/app_dev.php/,1418996306,
+=======
+745d0f,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/,1418995766,
+da4068,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/,1418998553,
+>>>>>>> 3d6f4f1d4a4394d452ef2abc1a67121d0072743e
+>>>>>>> b908cc9383d1c03f9a4523c49498879e8d3318ea
