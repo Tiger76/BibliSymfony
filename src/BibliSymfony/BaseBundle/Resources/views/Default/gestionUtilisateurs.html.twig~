@@ -1,0 +1,169 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<html>
+<head>
+	<title>element</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/color-button.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/element.css" />
+	<!-- js Boots_from -->
+	<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+	<!-- end Boots_from -->
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true">
+
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="tabbable span9">
+						<div class="box-table widget">
+							<div class="widget-content">
+						      <div class="title">
+						      	<h3>Gestion Utilisateur</h3>
+						      </div><!-- end title -->
+								<table id="tableUser" class="table table-striped table-bordered table-condensed">
+									<thead>
+									  <tr>
+										<th>id</th>
+										<th>Nom</th>
+										<th>Prenom</th>
+										<th>Email</th>
+										<th>Mot de passe</th>
+										<th>Adresse</th>
+										<th>Code Postale</th>
+										<th>Crédit</th>
+										<th>estAdmin</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Valerich</td>
+										<td>mark@gmail.com</td>
+										<td>pasvisible</td>
+										<td>13 la Rue du Bois, Le Havre</td>
+										<td>76600</td>
+										<td>100</td>
+										<td>Non</td>
+										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
+										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
+									  </tr>
+									  <tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Bensoussan</td>
+										<td>jacob@gmail.com</td>
+										<td>pasvisible</td>
+										<td>76 la Rue du Bois, Le Havre</td>
+										<td>76600</td>
+										<td>100</td>
+										<td>Non</td>
+										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
+										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
+									  </tr>
+									</tbody>
+								</table>
+								<div id="ajoutUti" class="visible">
+									<table class="table table-striped table-bordered table-condensed">
+										<tbody>
+											<tr>
+												<td colspan= "3" id="caseAjout"><a href="#" onclick="ajoutUtilisateur()" class="button"><span class="user">Ajouter un utilisateur</span></a></td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+						      <div class="footer-table">
+				            	<div class="navigation pagination pull-right">
+									<ul>
+										<li><a href="#">←</a></li>
+										<li><a class="active" href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">→</a></li>
+									</ul>
+								</div>
+						      </div>
+						    </div>
+					    </div><!-- end box-table style1-->
+		</div>
+	</div><!-- end container -->
+</div><!-- end main -->
+</body>
+
+<script type="text/javascript">
+	
+	function ajoutUtilisateur(){
+		
+		document.getElementById('ajoutUti').className = "cachee";
+	
+		var newRow = document.getElementById('tableUser').insertRow(-1);
+
+		var newCell = newRow.insertCell(0);
+
+		newCell.innerHTML = 'id auto';
+
+		newCell = newRow.insertCell(1);
+
+		newCell.innerHTML = '<INPUT type=text name="nom">';
+		
+		newCell = newRow.insertCell(2);
+
+		newCell.innerHTML = '<INPUT type=text name="prenom">';
+		
+		newCell = newRow.insertCell(3);
+
+		newCell.innerHTML = '<INPUT type=text name="email">';
+		
+		newCell = newRow.insertCell(4);
+
+		newCell.innerHTML = '<INPUT type=text name="mdp">';
+		
+		newCell = newRow.insertCell(5);
+
+		newCell.innerHTML = '<INPUT type=text name="adresse">';
+		
+		newCell = newRow.insertCell(6);
+
+		newCell.innerHTML = '<INPUT type=text name="cp">';
+		
+		newCell = newRow.insertCell(7);
+
+		newCell.innerHTML = '<INPUT type=text name="credit">';
+		
+		newCell = newRow.insertCell(8);
+
+		newCell.innerHTML = '<FORM NAME="Choix"><SELECT NAME="adminChoix" onChange="Lien()"><OPTION VALUE="">Administrateur?<OPTION VALUE="true">Oui<OPTION VALUE="false">Non</SELECT></FORM>';
+		
+		newCell = newRow.insertCell(9);
+
+		newCell.innerHTML = '<td id="caseSuppression"><INPUT TYPE="submit" NAME="annuler" VALUE="Annuler" onclick="supprimerChoix()"></td>';
+		
+		newCell = newRow.insertCell(10);
+
+		newCell.innerHTML = '<td id="caseModifier"><INPUT TYPE="submit" NAME="ajouter" VALUE="Valider" onclick="validerChoix()"></td></FORM>';
+	}
+	
+	function validerChoix()
+	{
+		document.getElementById('ajoutUti').className = "visible"; // ligne inutile par la suite
+		// Ici il faudrat envoyer à la base une requete pour rajouter le nouvel utilisateur
+		// Puis actualiser la table
+	}
+	
+	function supprimerChoix()
+	{
+		document.getElementById('ajoutUti').className = "visible"; // ligne inutile par la suite
+		// Il suffit uniquement d'actualiser la page
+	}
+	
+</script>
+</html>
+
+{% endblock%}

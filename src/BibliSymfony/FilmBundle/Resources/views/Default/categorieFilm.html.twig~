@@ -1,0 +1,118 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+<html>
+<head>
+	<title>Catalogue</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/color-button.css" />
+	<!-- js Boots_from -->
+	<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+	<!-- end Boots_from -->
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true">
+
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="box-wrapper span9">
+				<div class="row">
+					<div class="widget">
+							<div class="Action">
+								<div class="title">
+									<h3><a href="#">Action</a></h3>
+								</div>
+								<p class="ct-img"><a href="listefilmaction.html"><img src="assets/img/img-blog3.jpg"></a></p>
+							</div>
+					</div><!-- widget -->
+					
+					<div class="widget">
+							<div class="Action">
+								<div class="title">
+									<h3><a href="#">Comedie</a></h3>
+								</div>
+								<p class="ct-img"><a href=""><img src="assets/img/img-blog3.jpg"></a></p>
+							</div>
+					</div><!-- widget -->
+			
+
+
+			<div class="box-content-widget span9">
+				<div class="row">
+					<div class="widget">
+					</div><!-- widget -->
+						
+				</div><!-- row -->
+	</div><!-- box-content-widget -->
+</div>
+</div><!-- end body-content -->
+			
+			<div class="sidebar-content span3">
+				<div class="row">
+					
+				</div><!-- row -->
+				<div class="row">
+					<div class="box-wrapper span3">
+						<div class="row">
+							<div class="title bg-title span3">
+								<h3>Dernier ajout</h3>
+							</div>
+						</div>
+						<ul class="thumbnails thumbnails-horizontal">
+							
+							<li class="span3">
+								<div class="thumbnail border-radius-top">
+									<div class="bg-thumbnail-img">
+										<a class="overlay" href="detail.html">
+											<img src="assets/img/icons/play.png">
+										</a>
+									<img class="border-radius-top" src="assets/img/pj3.jpg">
+									</div>
+									
+									<h5><a href="detail.html"> </a></h5>
+								</div>
+								<div class="box border-radius-bottom">
+									<p>
+										<span class="title_torrent pull-left">Titre du film</span>
+										<span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>prix jeton</span>
+									</p>
+								</div>
+							</li>
+
+							<li class="span3">
+								<div class="thumbnail border-radius-top">
+									<div class="bg-thumbnail-img">
+										<a class="overlay" href="detail.html">
+											<img src="assets/img/icons/play.png">
+										</a>
+									<img class="border-radius-top" src="assets/img/pj3.jpg">
+									</div>
+									
+									<h5><a href="detail.html"> </a></h5>
+								</div>
+								<div class="box border-radius-bottom">
+									<p>
+										<span class="title_torrent pull-left">Titre du film</span>
+										<span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>prix jeton</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div><!-- end thumbnails-style1 -->
+				</div><!-- row -->
+
+			</div><!-- end sidebar-content -->
+		</div><!-- row -->
+	</div><!-- end container -->
+</div><!-- end main -->
+
+</body>
+</html>
+
+{% endblock%}
