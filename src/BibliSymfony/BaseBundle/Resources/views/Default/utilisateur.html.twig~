@@ -1,10 +1,7 @@
-{% extends "::base.html.twig" %}
-
-{% block body %}
-
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Gestion Utilisateurs</title>
+	<title>Utilisateur</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="assets/css/global.css" />
@@ -27,33 +24,48 @@
 						<div class="box-table widget">
 							<div class="widget-content">
 						      <div class="title">
-						      	<h3>Gestion Utilisateur</h3>
+						      	<h3>Historique des locations de films pour NOMUTILSATEUR</h3>
 						      </div><!-- end title -->
 								<table id="tableUser" class="table table-striped table-bordered table-condensed">
 									<thead>
 									  <tr>
-										<th>Identifiant</th>
-										<th>Jetons</th>
+										<th>Titre</th>
+										<th>Date de location</th>
+										<th>Descriptif</th>
+										
 									  </tr>
 									</thead>
 									<tbody>
 									  <tr>
-										<td>ZorroLePlusBo</td>
-										<td>100</td>
+										<td>Blanche fesse</td>
+										<td>10/12/2012</td>
+										<td>Nouveau record du monde du plus gros gang bang impliquant des nains</td>
 										
-										
-										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
 									  </tr>
 									  <tr>
-										<td>RaHanlePoilu</td>
-										<td>100</td>
-										
-										
-										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
+										<td>La Bande a picsou</td>
+										<td>10/12/2013</td>
+										<td>Il aime l'or ce juif de picsou ! Tout ca pour acheter encore plus de sous !</td>
+									
 									  </tr>
 									</tbody>
 								</table>
-								
+								<div class="title">
+									<h3>Ajouter/Supprimer des Jetons pour NOMUTILISATEUR</h3>
+								</div>
+								<div id="ajoutJetons" class="visible">
+									<table class="table table-striped table-bordered table-condensed">
+										<tbody>
+											<tr>
+												<td colspan= "3" id="montant"><input type="text" value="0"/></td>
+
+												<td colspan= "3" id="caseAjout"><a href="#" onclick="ajoutJetons" class="button"><span class="user">Supprimer ce montant</span></a></td></td>
+												<td colspan= "3" id="caseAjout"><a href="#" onclick="ajoutJetons" class="button"><span class="user">Ajouter ce montant </span></a></td></td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
 						      <div class="footer-table">
 				            	<div class="navigation pagination pull-right">
 									<ul>
@@ -76,5 +88,3 @@
 
 
 </html>
-
-{% endblock %}
