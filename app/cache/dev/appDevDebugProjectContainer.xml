@@ -2978,19 +2978,11 @@
         <argument>Base</argument>
       </call>
       <call method="addPath">
-<<<<<<< HEAD
-        <argument>C:\wamp\www\BibliSymfony\src\BibliSymfony\FilmBundle/Resources/views</argument>
-        <argument>Film</argument>
-      </call>
-      <call method="addPath">
-        <argument>C:\wamp\www\BibliSymfony\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
-=======
         <argument>C:\xampp\htdocs\BibliSymfony\src\BibliSymfony\FilmBundle/Resources/views</argument>
         <argument>Film</argument>
       </call>
       <call method="addPath">
         <argument>C:\xampp\htdocs\BibliSymfony\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
->>>>>>> f9d5905274e251b13207c73660dec02d70dce921
         <argument>Debug</argument>
       </call>
       <call method="addPath">
