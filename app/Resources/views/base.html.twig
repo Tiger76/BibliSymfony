@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>{% block title %}BibliStream site de gestion{% endblock %}</title>
+        
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/BibliSymfonyBase/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/BibliSymfonyBase/css/bootstrap.min_1.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/BibliSymfonyBase/css/bootstrap-theme.min.css') }}">
+        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/BibliSymfonyBase/css/global.css') }}" />
+        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/BibliSymfonyBase/css/color-button.css') }}" />
+        <!-- js Boots_from -->
+        <script src="{{ asset('bundles/BibliSymfonyBase/js/jquery.js') }}"></script>
+        <script src="{{ asset('bundles/BibliSymfonyBase/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('bundles/BibliSymfonyBase/js/custom.js') }}"></script>
+        <!-- end Boots_from -->
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
+    
+    <body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="brand" href="#">
+                                <span>Bibli</span><span class="cl-blue">Stream</span>
+                            </a>
+                        </div>
+                        <div class=" nav-collapse">
+                            <ul class="nav pull-right col-md-7">
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="blog.html">Films</a></li>
+                                <li><a href="blog.html">Categories</a></li>
+
+                                <li class="divider-vertical"></li>
+
+                                <li class="avatar_small"><a href="account.html"></a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                        john doe
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="profile.html">
+                                                <i class="icon-user"></i>
+                                                Account Setting  </a>
+                                        </li>
+                                        <li>
+                                            <a href="setting.html">
+                                                <i class="icon-lock"></i> Change Password</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="login.html"><i class="icon-off"></i> Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><button type="button" onclick="#" class="btn">Administration</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         {% block body %}{% endblock %}
+        
         {% block javascripts %}{% endblock %}
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 logo-vt">
+                        <a class="brand" href="#">
+                            <span>Bibli</span><span class="cl-blue">Stream</span>
+                        </a>
+                        <span class="coppy_right">
+                            <p>BibliStream est un site de la société</p>
+                            <p>3C @ 2014 Tous droits réservés.</p>
+                            <p>Projet CARCAIP13-15 CCI&Caux.</p>
+                        </span>
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <ul class="nav nav-list">
+                            <li class="nav-header">Aide</li>
+                            <li class="cl-blue"><a href="#">Plan du site</a></li>
+                            <li class="cl-blue"><a href="mailto:seb@gmail.com">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <ul class="nav nav-list">
+                            <li class="nav-header">CCI&Caux</li>
+                            <li><a href="https://www.facebook.com/ccicaux.formation.76?fref=ts"><i class="facebook"></i>Facebook</a></li>
+                            <li><a href="http://www.ccicaux-formation.com/"><i class="cl-blue"></i>Site web</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
     </body>
 </html>

@@ -128,8 +128,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // film_homepage
-        if (0 === strpos($pathinfo, '/films/hello') && preg_match('#^/films/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'film_homepage')), array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::indexAction',));
+        if (0 === strpos($pathinfo, '/films') && preg_match('#^/films/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'film_homepage')), array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::ficheFilmAction',));
         }
 
         // bibliSymfony_base_accueil

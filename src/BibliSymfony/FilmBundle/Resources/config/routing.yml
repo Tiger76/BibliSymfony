@@ -2,15 +2,15 @@ film_homepage:
     path:     /{id}
     defaults: { _controller: FilmBundle:Default:ficheFilm }
     
-    film_homepage:
+film_homepage:
     path:     /categorie
     defaults: { _controller: FilmBundle:Default:categorieFilm }
     
-    film_homepage:
+film_homepage:
     path:     /liste
     defaults: { _controller: FilmBundle:Default:gestionFilms }
     
-    film_homepage:
+film_homepage:
     path:     /gestionBa
     defaults: { _controller: FilmBundle:Default:gestionBa }
     
