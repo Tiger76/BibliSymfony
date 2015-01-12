@@ -11,7 +11,7 @@ class DefaultController extends Controller
         return $this->render('BaseBundle:Default:login.html.twig');
     }
     
-    public function accueilAction()
+    public function bienvenueAction()
     {
         return $this->render('BaseBundle:Default:accueil.html.twig');
     }

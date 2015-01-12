@@ -151,8 +151,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // bibliSymfony_base_accueil
-        if ($pathinfo === '/accueil') {
-            return array (  '_controller' => 'BibliSymfony\\BaseBundle\\Controller\\DefaultController::accueilAction',  '_route' => 'bibliSymfony_base_accueil',);
+        if ($pathinfo === '/bienvenue') {
+            return array (  '_controller' => 'BibliSymfony\\BaseBundle\\Controller\\DefaultController::bienvenueAction',  '_route' => 'bibliSymfony_base_accueil',);
         }
 
         // bibliSymfony_base_users
