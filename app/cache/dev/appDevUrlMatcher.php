@@ -127,9 +127,27 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // film_homepage
-        if (0 === strpos($pathinfo, '/films') && preg_match('#^/films/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'film_homepage')), array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::ficheFilmAction',));
+        if (0 === strpos($pathinfo, '/films')) {
+            // film_categorie
+            if ($pathinfo === '/films/categorie') {
+                return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::categorieFilmAction',  '_route' => 'film_categorie',);
+            }
+
+            // film_gestionBa
+            if ($pathinfo === '/films/gestionBa') {
+                return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionBaAction',  '_route' => 'film_gestionBa',);
+            }
+
+            // film_liste
+            if ($pathinfo === '/films/liste') {
+                return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionFilmsAction',  '_route' => 'film_liste',);
+            }
+
+            // film_homepage
+            if (preg_match('#^/films/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'film_homepage')), array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::ficheFilmAction',));
+            }
+
         }
 
         // bibliSymfony_base_accueil

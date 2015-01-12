@@ -55,7 +55,11 @@ class Utilisateur
      * @ORM\Column(name="estAdmin", type="boolean")
      */
     private $estAdmin;
-
+    
+    /** 
+     * @ORM\OneToMany(targetEntity="Location", mappedBy="idUtilisateur", cascade={"persist"})
+     */
+    private $listeFilm;
 
     /**
      * Get id
@@ -180,5 +184,45 @@ class Utilisateur
     public function getEstAdmin()
     {
         return $this->estAdmin;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->listeFilm = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add listeFilm
+     *
+     * @param \BibliSymfony\BaseBundle\Entity\Location $listeFilm
+     * @return Utilisateur
+     */
+    public function addListeFilm(\BibliSymfony\BaseBundle\Entity\Location $listeFilm)
+    {
+        $this->listeFilm[] = $listeFilm;
+    
+        return $this;
+    }
+
+    /**
+     * Remove listeFilm
+     *
+     * @param \BibliSymfony\BaseBundle\Entity\Location $listeFilm
+     */
+    public function removeListeFilm(\BibliSymfony\BaseBundle\Entity\Location $listeFilm)
+    {
+        $this->listeFilm->removeElement($listeFilm);
+    }
+
+    /**
+     * Get listeFilm
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getListeFilm()
+    {
+        return $this->listeFilm;
     }
 }

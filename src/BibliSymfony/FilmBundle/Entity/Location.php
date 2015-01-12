@@ -27,7 +27,11 @@ class Location
      * @ORM\Column(name="dateLocation", type="date")
      */
     private $dateLocation;
-
+    
+    /** 
+     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="listeFilm", cascade={"persist"})
+     */
+    private $idUtilisateur;
 
     /**
      * Get id
@@ -60,5 +64,28 @@ class Location
     public function getDateLocation()
     {
         return $this->dateLocation;
+    }
+
+    /**
+     * Set idUtilisateur
+     *
+     * @param \BibliSymfony\FilmBundle\Entity\Utilisateur $idUtilisateur
+     * @return Location
+     */
+    public function setIdUtilisateur(\BibliSymfony\FilmBundle\Entity\Utilisateur $idUtilisateur = null)
+    {
+        $this->idUtilisateur = $idUtilisateur;
+    
+        return $this;
+    }
+
+    /**
+     * Get idUtilisateur
+     *
+     * @return \BibliSymfony\FilmBundle\Entity\Utilisateur 
+     */
+    public function getIdUtilisateur()
+    {
+        return $this->idUtilisateur;
     }
 }
