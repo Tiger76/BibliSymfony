@@ -20,7 +20,7 @@ class DefaultController extends Controller
     
      public function gestionFilmsAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig');
+        return $this->render('FilmBundle:Default:gestionFilms.html.twig');
         
     }
     public function gestionDifBaAction()

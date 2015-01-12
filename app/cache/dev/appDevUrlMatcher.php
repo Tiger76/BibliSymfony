@@ -133,14 +133,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::categorieFilmAction',  '_route' => 'film_categorie',);
             }
 
-            // film_gestionBa
-            if ($pathinfo === '/films/gestionBa') {
-                return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionBaAction',  '_route' => 'film_gestionBa',);
-            }
+            if (0 === strpos($pathinfo, '/films/ge')) {
+                // film_gestionBa
+                if ($pathinfo === '/films/gestionBa') {
+                    return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionBaAction',  '_route' => 'film_gestionBa',);
+                }
 
-            // film_liste
-            if ($pathinfo === '/films/liste') {
-                return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionFilmsAction',  '_route' => 'film_liste',);
+                // film_liste
+                if ($pathinfo === '/films/gererFilms') {
+                    return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionFilmsAction',  '_route' => 'film_liste',);
+                }
+
             }
 
             // film_homepage

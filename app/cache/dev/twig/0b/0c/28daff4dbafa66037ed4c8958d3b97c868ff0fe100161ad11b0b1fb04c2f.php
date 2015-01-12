@@ -55,7 +55,7 @@ class __TwigTemplate_0b0c28daff4dbafa66037ed4c8958d3b97c868ff0fe100161ad11b0b1fb
 \t\t\t\t\t<input type=\"text\" class=\"input\" placeholder=\"Entrez votre mot de passe...\">
 \t\t\t\t\t</label>
 \t\t\t\t  \t<a href=\"bienvenue\" type=\"submit\" class=\"btn btn-info\">Connexion</a><br><br>
-\t\t\t\t        <a href=\"index.html\" type=\"invite\" class=\"btn btn-info\">Poursuivre en tant qu'invité</a>
+\t\t\t\t        <a href=\"bienvenue\" type=\"invite\" class=\"btn btn-info\">Poursuivre en tant qu'invité</a>
 \t\t\t\t</form>\t
 \t\t\t</div>
 \t\t<div>

@@ -16,6 +16,11 @@ class DefaultController extends Controller
         return $this->render('BaseBundle:Default:accueil.html.twig');
     }
     
+    public function gestionUtilisateursAction()
+    {
+        return $this->render('BaseBundle:Default:gestionUtilisateurs.html.twig');
+    }
+
     /*public function gestionUtilisateursAction()
     {
         return $this->render('BaseBundle:Default:index.html.twig', array('name' => $name));

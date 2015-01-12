@@ -115,7 +115,8 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
                                     </ul>
                                 </li>
 
-                                <li><button type=\"button\" onclick=\"#\" class=\"btn\">Administration</button></li>
+                                <li><button onclick=\"self.location.href='users'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Utilisateurs</button></li>
+                                <li><button onclick=\"self.location.href='gererFilms'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Films</button></li>
                             </ul>
                         </div>
                     </div>
@@ -124,14 +125,14 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
         </div>
         
         ";
-        // line 72
-        $this->displayBlock('body', $context, $blocks);
         // line 73
+        $this->displayBlock('body', $context, $blocks);
+        // line 74
         echo "        
         ";
-        // line 74
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 75
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 76
         echo "        
         <div class=\"footer\">
             <div class=\"container\">
@@ -180,12 +181,12 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
     {
     }
 
-    // line 72
+    // line 73
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 74
+    // line 75
     public function block_javascripts($context, array $blocks = array())
     {
     }
@@ -202,6 +203,6 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
 
     public function getDebugInfo()
     {
-        return array (  189 => 74,  184 => 72,  179 => 19,  173 => 4,  135 => 75,  133 => 74,  130 => 73,  128 => 72,  72 => 20,  70 => 19,  65 => 17,  61 => 16,  57 => 15,  52 => 13,  48 => 12,  44 => 11,  40 => 10,  36 => 9,  28 => 4,  23 => 1,);
+        return array (  190 => 75,  185 => 73,  180 => 19,  174 => 4,  136 => 76,  134 => 75,  131 => 74,  129 => 73,  72 => 20,  70 => 19,  65 => 17,  61 => 16,  57 => 15,  52 => 13,  48 => 12,  44 => 11,  40 => 10,  36 => 9,  28 => 4,  23 => 1,);
     }
 }
