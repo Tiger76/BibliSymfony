@@ -156,44 +156,4 @@ class Categorie
     {
         return $this->image;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->listeFilm = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add listeFilm
-     *
-     * @param \BibliSymfony\FilmBundle\Entity\Film $listeFilm
-     * @return Categorie
-     */
-    public function addListeFilm(\BibliSymfony\FilmBundle\Entity\Film $listeFilm)
-    {
-        $this->listeFilm[] = $listeFilm;
-    
-        return $this;
-    }
-
-    /**
-     * Remove listeFilm
-     *
-     * @param \BibliSymfony\FilmBundle\Entity\Film $listeFilm
-     */
-    public function removeListeFilm(\BibliSymfony\FilmBundle\Entity\Film $listeFilm)
-    {
-        $this->listeFilm->removeElement($listeFilm);
-    }
-
-    /**
-     * Get listeFilm
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getListeFilm()
-    {
-        return $this->listeFilm;
-    }
 }
