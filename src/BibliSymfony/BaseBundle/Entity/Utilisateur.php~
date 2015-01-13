@@ -57,7 +57,7 @@ class Utilisateur
     private $estAdmin;
     
     /** 
-     * @ORM\OneToMany(targetEntity="Location", mappedBy="idUtilisateur", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="BibliSymfony\FilmBundle\Entity\Location", mappedBy="idUtilisateur", cascade={"persist"})
      */
     private $listeFilm;
 

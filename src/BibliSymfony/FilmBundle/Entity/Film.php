@@ -38,6 +38,13 @@ class Film
     /**
      * @var string
      *
+     * @ORM\Column(name="$lienImage", type="string", length=255)
+     */
+    private $lienImage;
+    
+    /**
+     * @var string
+     *
      * @ORM\Column(name="lienFilm", type="string", length=255)
      */
     private $lienFilm;
@@ -313,5 +320,28 @@ class Film
     public function getIdCategorie()
     {
         return $this->idCategorie;
+    }
+
+    /**
+     * Set lienImage
+     *
+     * @param string $lienImage
+     * @return Film
+     */
+    public function setLienImage($lienImage)
+    {
+        $this->lienImage = $lienImage;
+    
+        return $this;
+    }
+
+    /**
+     * Get lienImage
+     *
+     * @return string 
+     */
+    public function getLienImage()
+    {
+        return $this->lienImage;
     }
 }

@@ -29,7 +29,7 @@ class Location
     private $dateLocation;
     
     /** 
-     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="listeFilm", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="BibliSymfony\BaseBundle\Entity\Utilisateur", inversedBy="listeFilm", cascade={"persist"})
      */
     private $idUtilisateur;
 
