@@ -7,7 +7,7 @@ film_gestionBa:
     defaults: { _controller: FilmBundle:Default:gestionBa }
     
 film_liste:
-    path:     /liste
+    path:     /gererFilms
     defaults: { _controller: FilmBundle:Default:gestionFilms }
     
 film_homepage:
