@@ -33,6 +33,11 @@ class Location
      */
     private $idUtilisateur;
 
+    /** 
+     * @ORM\ManyToOne(targetEntity="Film", inversedBy="listeLoueur", cascade={"persist"})
+     */
+    private $idFilm;
+    
     /**
      * Get id
      *
@@ -87,5 +92,28 @@ class Location
     public function getIdUtilisateur()
     {
         return $this->idUtilisateur;
+    }
+
+    /**
+     * Set idFilm
+     *
+     * @param \BibliSymfony\FilmBundle\Entity\Film $idFilm
+     * @return Location
+     */
+    public function setIdFilm(\BibliSymfony\FilmBundle\Entity\Film $idFilm = null)
+    {
+        $this->idFilm = $idFilm;
+    
+        return $this;
+    }
+
+    /**
+     * Get idFilm
+     *
+     * @return \BibliSymfony\FilmBundle\Entity\Film 
+     */
+    public function getIdFilm()
+    {
+        return $this->idFilm;
     }
 }

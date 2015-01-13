@@ -103,6 +103,32 @@
 [2015-01-12 13:38:56] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
 [2015-01-12 13:38:56] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onTerminate". [] []
 [2015-01-12 13:38:56] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+<<<<<<< HEAD
+[2015-01-12 16:47:09] event.DEBUG: Notified event "console.command" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure". [] []
+[2015-01-12 16:47:09] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:09] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:09] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onTerminate". [] []
+[2015-01-12 16:47:09] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2015-01-12 16:47:09] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2015-01-12 16:47:35] event.DEBUG: Notified event "console.command" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure". [] []
+[2015-01-12 16:47:35] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:35] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:35] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onTerminate". [] []
+[2015-01-12 16:47:35] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2015-01-12 16:47:35] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2015-01-12 16:47:45] event.DEBUG: Notified event "console.command" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure". [] []
+[2015-01-12 16:47:45] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:45] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:46] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onTerminate". [] []
+[2015-01-12 16:47:46] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2015-01-12 16:47:46] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2015-01-12 16:47:56] event.DEBUG: Notified event "console.command" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure". [] []
+[2015-01-12 16:47:56] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:56] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2015-01-12 16:47:56] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onTerminate". [] []
+[2015-01-12 16:47:56] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2015-01-12 16:47:56] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+=======
 [2015-01-12 15:11:49] request.INFO: Matched route "bibliSymfony_base_login" (parameters: "_controller": "BibliSymfony\BaseBundle\Controller\DefaultController::loginAction", "_route": "bibliSymfony_base_login") [] []
 [2015-01-12 15:11:49] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure". [] []
 [2015-01-12 15:11:49] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
@@ -7067,6 +7093,7 @@
 [2015-01-12 16:18:18] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
 [2015-01-12 16:18:18] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onTerminate". [] []
 [2015-01-12 16:18:18] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+<<<<<<< HEAD
 [2015-01-12 16:21:38] request.ERROR: Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET /gererFilms" (from "http://localhost/symfo/BibliSymfony/web/app_dev.php/users")" at /var/www/symfo/BibliSymfony/app/cache/dev/classes.php line 4689 {"exception":"[object] (Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException: No route found for \"GET /gererFilms\" (from \"http://localhost/symfo/BibliSymfony/web/app_dev.php/users\") at /var/www/symfo/BibliSymfony/app/cache/dev/classes.php:4689, Symfony\\Component\\Routing\\Exception\\ResourceNotFoundException:  at /var/www/symfo/BibliSymfony/app/cache/dev/appDevUrlMatcher.php:175)"} []
 [2015-01-12 16:21:38] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\EventDispatcher\Debug\WrappedListener::__invoke". [] []
 [2015-01-12 16:21:38] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\EventDispatcher\Debug\WrappedListener::__invoke". [] []
@@ -14526,3 +14553,6 @@
 [2015-01-12 16:31:32] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
 [2015-01-12 16:31:32] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onTerminate". [] []
 [2015-01-12 16:31:32] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+=======
+>>>>>>> 4683840360c0da41b3929d7680f8ec14909dd69d
+>>>>>>> 487405e7f76bde69533e5d2e47a94af9d4588ee2
