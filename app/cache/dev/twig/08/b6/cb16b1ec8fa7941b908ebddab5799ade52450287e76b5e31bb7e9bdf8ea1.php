@@ -115,8 +115,14 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
                                     </ul>
                                 </li>
 
-                                <li><button onclick=\"self.location.href='users'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Utilisateurs</button></li>
-                                <li><button onclick=\"self.location.href='gererFilms'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Films</button></li>
+                                <li><button onclick=\"self.location.href='";
+        // line 64
+        echo $this->env->getExtension('routing')->getPath("bibliSymfony_base_users");
+        echo "'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Utilisateurs</button></li>
+                                <li><button onclick=\"self.location.href='";
+        // line 65
+        echo $this->env->getExtension('routing')->getPath("film_liste");
+        echo "'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Films</button></li>
                             </ul>
                         </div>
                     </div>
@@ -203,6 +209,6 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
 
     public function getDebugInfo()
     {
-        return array (  190 => 75,  185 => 73,  180 => 19,  174 => 4,  136 => 76,  134 => 75,  131 => 74,  129 => 73,  72 => 20,  70 => 19,  65 => 17,  61 => 16,  57 => 15,  52 => 13,  48 => 12,  44 => 11,  40 => 10,  36 => 9,  28 => 4,  23 => 1,);
+        return array (  196 => 75,  191 => 73,  186 => 19,  180 => 4,  142 => 76,  140 => 75,  137 => 74,  135 => 73,  124 => 65,  120 => 64,  72 => 20,  70 => 19,  65 => 17,  61 => 16,  57 => 15,  52 => 13,  48 => 12,  44 => 11,  40 => 10,  36 => 9,  28 => 4,  23 => 1,);
     }
 }
