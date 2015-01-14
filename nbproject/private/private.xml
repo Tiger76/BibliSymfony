@@ -3,9 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Entity/Utilisateur.php</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Location.php</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Categorie.php</file>
+            <file>file:/C:/wamp/www/BibliSymfony/app/config/parameters.yml</file>
             <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Film.php</file>
         </group>
     </open-files>
