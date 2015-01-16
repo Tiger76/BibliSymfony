@@ -31,7 +31,7 @@ class __TwigTemplate_4581f7eccf2712d3595c6c32abec3a1dc2dd8cfa1d7c21406ed38c4ea68
         echo "
 <html>
 <head>
-\t<title>Catalogue</title>
+\t<title>Catégories</title>
 \t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
 \t<link rel=\"stylesheet\" type=\"text/css\" href=\"assets/css/bootstrap.min.css\">
 \t<link type=\"text/css\" rel=\"stylesheet\" href=\"assets/css/global.css\" />
@@ -64,26 +64,39 @@ class __TwigTemplate_4581f7eccf2712d3595c6c32abec3a1dc2dd8cfa1d7c21406ed38c4ea68
 \t\t\t\t\t\t\t\t\t  </tr>
 \t\t\t\t\t\t\t\t\t</thead>
 \t\t\t\t\t\t\t\t\t<tbody>
-\t\t\t\t\t\t\t\t\t  <tr>
-\t\t\t\t\t\t\t\t\t\t<td>1</td>
-\t\t\t\t\t\t\t\t\t\t<td>Horreur</td>
-\t\t\t\t\t\t\t\t\t\t<td>Du gore, des filles stupides, et les noirs qui crevent les premiers comme toujours !</td>
-\t\t\t\t\t\t\t\t\t\t<td></td>
-\t\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
-\t\t\t\t\t\t\t\t\t\t<td id=\"caseModifier\"><a href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
-\t\t\t\t\t\t\t\t\t  </tr>
-\t\t\t\t\t\t\t\t\t  <tr>
-\t\t\t\t\t\t\t\t\t\t<td>2</td>
-\t\t\t\t\t\t\t\t\t\t<td>Porn</td>
-\t\t\t\t\t\t\t\t\t\t<td>T'as vraiment besoin d'une description ?</td>
-\t\t\t\t\t\t\t\t\t\t<td></td>
-\t\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
-\t\t\t\t\t\t\t\t\t\t<td id=\"caseModifier\"><a href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
-\t\t\t\t\t\t\t\t\t  </tr>
-\t\t\t\t\t\t\t\t\t</tbody>
+                                                                          ";
+        // line 40
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["listeCateg"]) ? $context["listeCateg"] : $this->getContext($context, "listeCateg")));
+        foreach ($context['_seq'] as $context["_key"] => $context["info"]) {
+            // line 41
+            echo "                                                                            <tr>
+                                                                                  <td>";
+            // line 42
+            echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "id", array()), "html", null, true);
+            echo "</td>
+                                                                                  <td>";
+            // line 43
+            echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "titre", array()), "html", null, true);
+            echo "</td>
+                                                                                  <td>";
+            // line 44
+            echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "description", array()), "html", null, true);
+            echo "</td>
+                                                                                  <td>";
+            // line 45
+            echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "image", array()), "html", null, true);
+            echo "</td>
+                                                                                  <td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
+                                                                                  <td id=\"caseModifier\"><a href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
+                                                                            </tr>
+                                                                          ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['info'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 50
+        echo "\t\t\t\t\t\t\t\t\t</tbody>
 \t\t\t\t\t\t\t\t</table>
 \t\t\t\t\t\t\t\t<div id=\"ajoutUti\" class=\"visible\">
 \t\t\t\t\t\t\t\t\t<table class=\"table table-striped table-bordered table-condensed\">
@@ -176,6 +189,6 @@ class __TwigTemplate_4581f7eccf2712d3595c6c32abec3a1dc2dd8cfa1d7c21406ed38c4ea68
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,);
+        return array (  99 => 50,  88 => 45,  84 => 44,  80 => 43,  76 => 42,  73 => 41,  69 => 40,  31 => 4,  28 => 3,);
     }
 }
