@@ -48,201 +48,117 @@ class __TwigTemplate_4581f7eccf2712d3595c6c32abec3a1dc2dd8cfa1d7c21406ed38c4ea68
 <div class=\"main\">
 \t<div class=\"container\">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"box-wrapper span9\">
-\t\t\t\t<div class=\"row\">
-\t\t\t\t\t<div class=\"widget\">
-\t\t\t\t\t\t\t<div class=\"Action\">
-\t\t\t\t\t\t\t\t<div class=\"title\">
-\t\t\t\t\t\t\t\t\t<h3><a href=\"#\">Action</a></h3>
+\t\t\t<div class=\"tabbable span9\">
+\t\t\t\t\t\t<div class=\"box-table widget\">
+\t\t\t\t\t\t\t<div class=\"widget-content\">
+\t\t\t\t\t\t      <div class=\"title\">
+\t\t\t\t\t\t      \t<h3>Gestion Catégorie</h3>
+\t\t\t\t\t\t      </div><!-- end title -->
+\t\t\t\t\t\t\t\t<table id=\"tableUser\" class=\"table table-striped table-bordered table-condensed\">
+\t\t\t\t\t\t\t\t\t<thead>
+\t\t\t\t\t\t\t\t\t  <tr>
+\t\t\t\t\t\t\t\t\t\t<th>id</th>
+\t\t\t\t\t\t\t\t\t\t<th>Titre Catégorie</th>
+\t\t\t\t\t\t\t\t\t\t<th>Description</th>
+\t\t\t\t\t\t\t\t\t\t<th>Image</th>
+\t\t\t\t\t\t\t\t\t  </tr>
+\t\t\t\t\t\t\t\t\t</thead>
+\t\t\t\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t\t\t  <tr>
+\t\t\t\t\t\t\t\t\t\t<td>1</td>
+\t\t\t\t\t\t\t\t\t\t<td>Horreur</td>
+\t\t\t\t\t\t\t\t\t\t<td>Du gore, des filles stupides, et les noirs qui crevent les premiers comme toujours !</td>
+\t\t\t\t\t\t\t\t\t\t<td></td>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
+\t\t\t\t\t\t\t\t\t\t<td id=\"caseModifier\"><a href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
+\t\t\t\t\t\t\t\t\t  </tr>
+\t\t\t\t\t\t\t\t\t  <tr>
+\t\t\t\t\t\t\t\t\t\t<td>2</td>
+\t\t\t\t\t\t\t\t\t\t<td>Porn</td>
+\t\t\t\t\t\t\t\t\t\t<td>T'as vraiment besoin d'une description ?</td>
+\t\t\t\t\t\t\t\t\t\t<td></td>
+\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
+\t\t\t\t\t\t\t\t\t\t<td id=\"caseModifier\"><a href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
+\t\t\t\t\t\t\t\t\t  </tr>
+\t\t\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t\t\t</table>
+\t\t\t\t\t\t\t\t<div id=\"ajoutUti\" class=\"visible\">
+\t\t\t\t\t\t\t\t\t<table class=\"table table-striped table-bordered table-condensed\">
+\t\t\t\t\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t\t\t\t\t<td colspan= \"3\" id=\"caseAjout\"><a href=\"#\" onclick=\"ajoutUtilisateur()\" class=\"button\"><span class=\"user\">Ajouter un utilisateur</span></a></td></td>
+\t\t\t\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t\t\t\t</table>
 \t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t<p class=\"ct-img\"><a href=\"listefilmaction.html\"><img src=\"assets/img/img-blog3.jpg\"></a></p>
-\t\t\t\t\t\t\t\t<table class=\"table table-striped table-bordered table-condensed\">
-\t\t\t\t\t<div class=\"title\">
-\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t      <div class=\"footer-table\">
+\t\t\t\t            \t<div class=\"navigation pagination pull-right\">
+\t\t\t\t\t\t\t\t\t<ul>
+\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">←</a></li>
+\t\t\t\t\t\t\t\t\t\t<li><a class=\"active\" href=\"#\">1</a></li>
+\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">2</a></li>
+\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">3</a></li>
+\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">→</a></li>
+\t\t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t        <thead>
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <th>#</th>
-\t\t\t\t\t\t            <th>Titre</th>
-\t\t\t\t\t\t            <th>Genre</th>
-\t\t\t\t\t\t            <th>Description</th>
-\t\t\t\t\t\t          </tr>
-\t\t\t\t\t\t        </thead>
-
-\t\t\t\t\t\t        <tbody>
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>1</td>
-\t\t\t\t\t\t            <td><a href=\"";
-        // line 48
-        echo $this->env->getExtension('routing')->getPath("film_homepage", array("id" => 2));
-        echo "\">liendetest</a></td>
-\t\t\t\t\t\t            <td>Combat</td>
-\t\t\t\t\t\t            <td>de la bagarre</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>2</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Jacob</a></td>
-\t\t\t\t\t\t            <td>Thornton</td>
-\t\t\t\t\t\t            <td>jacob@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>3</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Larry</a></td>
-\t\t\t\t\t\t            <td>the Bird</td>
-\t\t\t\t\t\t            <td>larry@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>4</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Robin</a></td>
-\t\t\t\t\t\t            <td>Thornton</td>
-\t\t\t\t\t\t            <td>robin@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>5</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Batman</a></td>
-\t\t\t\t\t\t            <td>Otto</td>
-\t\t\t\t\t\t            <td>batman@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t        </tbody>
-\t\t\t\t\t\t      </table>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t</div><!-- widget -->
-\t\t\t\t\t
-\t\t\t\t\t<div class=\"widget\">
-\t\t\t\t\t\t\t<div class=\"Action\">
-\t\t\t\t\t\t\t\t<div class=\"title\">
-\t\t\t\t\t\t\t\t\t<h3><a href=\"#\">Comedie</a></h3>
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t<p class=\"ct-img\"><a href=\"\"><img src=\"assets/img/img-blog3.jpg\"></a></p>
-\t\t\t\t\t\t\t\t<table class=\"table table-striped table-bordered table-condensed\">
-\t\t\t\t\t<div class=\"title\">
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t        <thead>
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <th>#</th>
-\t\t\t\t\t\t            <th>Titre</th>
-\t\t\t\t\t\t            <th>Genre</th>
-\t\t\t\t\t\t            <th>Description</th>
-\t\t\t\t\t\t          </tr>
-\t\t\t\t\t\t        </thead>
-
-\t\t\t\t\t\t        <tbody>
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>1</td>
-\t\t\t\t\t\t            <td><a href=\"#\">rocky</a></td>
-\t\t\t\t\t\t            <td>Combat</td>
-\t\t\t\t\t\t            <td>de la bagarre</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>2</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Jacob</a></td>
-\t\t\t\t\t\t            <td>Thornton</td>
-\t\t\t\t\t\t            <td>jacob@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>3</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Larry</a></td>
-\t\t\t\t\t\t            <td>the Bird</td>
-\t\t\t\t\t\t            <td>larry@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>4</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Robin</a></td>
-\t\t\t\t\t\t            <td>Thornton</td>
-\t\t\t\t\t\t            <td>robin@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-\t\t\t\t\t\t          <tr>
-\t\t\t\t\t\t            <td>5</td>
-\t\t\t\t\t\t            <td><a href=\"#\">Batman</a></td>
-\t\t\t\t\t\t            <td>Otto</td>
-\t\t\t\t\t\t            <td>batman@gmail.com</td>
-\t\t\t\t\t\t          </tr>
-
-\t\t\t\t\t\t        </tbody>
-\t\t\t\t\t\t      </table>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t</div><!-- widget -->
-\t\t\t
-
-
-\t\t\t<div class=\"box-content-widget span9\">
-\t\t\t\t<div class=\"row\">
-\t\t\t\t\t<div class=\"widget\">
-\t\t\t\t\t</div><!-- widget -->
-\t\t\t\t\t\t
-\t\t\t\t</div><!-- row -->
-\t</div><!-- box-content-widget -->
-</div>
-</div><!-- end body-content -->
-\t\t\t
-\t\t\t<div class=\"sidebar-content span3\">
-\t\t\t\t<div class=\"row\">
-\t\t\t\t\t
-\t\t\t\t</div><!-- row -->
-\t\t\t\t<div class=\"row\">
-\t\t\t\t\t<div class=\"box-wrapper span3\">
-\t\t\t\t\t\t<div class=\"row\">
-\t\t\t\t\t\t\t<div class=\"title bg-title span3\">
-\t\t\t\t\t\t\t\t<h3>Dernier ajout</h3>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<ul class=\"thumbnails thumbnails-horizontal\">
-\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t<li class=\"span3\">
-\t\t\t\t\t\t\t\t<div class=\"thumbnail border-radius-top\">
-\t\t\t\t\t\t\t\t\t<div class=\"bg-thumbnail-img\">
-\t\t\t\t\t\t\t\t\t\t<a class=\"overlay\" href=\"detail.html\">
-\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets/img/icons/play.png\">
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t<img class=\"border-radius-top\" src=\"assets/img/pj3.jpg\">
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t<h5><a href=\"detail.html\"> </a></h5>
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t<div class=\"box border-radius-bottom\">
-\t\t\t\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t\t\t\t<span class=\"title_torrent pull-left\">Titre du film</span>
-\t\t\t\t\t\t\t\t\t\t<span class=\"number-view pull-right\"><i class=\"icon-white icon-eye-open\"></i>prix jeton</span>
-\t\t\t\t\t\t\t\t\t</p>
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t</li>
-
-\t\t\t\t\t\t\t<li class=\"span3\">
-\t\t\t\t\t\t\t\t<div class=\"thumbnail border-radius-top\">
-\t\t\t\t\t\t\t\t\t<div class=\"bg-thumbnail-img\">
-\t\t\t\t\t\t\t\t\t\t<a class=\"overlay\" href=\"detail.html\">
-\t\t\t\t\t\t\t\t\t\t\t<img src=\"assets/img/icons/play.png\">
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t<img class=\"border-radius-top\" src=\"assets/img/pj3.jpg\">
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t<h5><a href=\"detail.html\"> </a></h5>
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t<div class=\"box border-radius-bottom\">
-\t\t\t\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t\t\t\t<span class=\"title_torrent pull-left\">Titre du film</span>
-\t\t\t\t\t\t\t\t\t\t<span class=\"number-view pull-right\"><i class=\"icon-white icon-eye-open\"></i>prix jeton</span>
-\t\t\t\t\t\t\t\t\t</p>
-\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t</ul>
-\t\t\t\t\t</div><!-- end thumbnails-style1 -->
-\t\t\t\t</div><!-- row -->
-
-\t\t\t</div><!-- end sidebar-content -->
-\t\t</div><!-- row -->
+\t\t\t\t\t\t      </div>
+\t\t\t\t\t\t    </div>
+\t\t\t\t\t    </div><!-- end box-table style1-->
+\t\t</div>
 \t</div><!-- end container -->
 </div><!-- end main -->
-
 </body>
+
+<script type=\"text/javascript\">
+\t
+\tfunction ajoutUtilisateur(){
+\t\t
+\t\tdocument.getElementById('ajoutUti').className = \"cachee\";
+\t
+\t\tvar newRow = document.getElementById('tableUser').insertRow(-1);
+
+\t\tvar newCell = newRow.insertCell(0);
+
+\t\tnewCell.innerHTML = 'id auto';
+
+\t\tnewCell = newRow.insertCell(1);
+
+\t\tnewCell.innerHTML = '<INPUT type=text name=\"Titre Catégorie\">';
+\t\t
+\t\tnewCell = newRow.insertCell(2);
+
+\t\tnewCell.innerHTML = '<INPUT type=text name=\"Description\">';
+\t\t
+\t\tnewCell = newRow.insertCell(3);
+
+\t\tnewCell.innerHTML = '<INPUT type=file name=\"Image\">';
+\t\t
+\t\tnewCell = newRow.insertCell(4);
+
+\t\tnewCell.innerHTML = '<td id=\"caseSuppression\"><INPUT TYPE=\"submit\" NAME=\"annuler\" VALUE=\"Annuler\" onclick=\"supprimerChoix()\"></td>';
+\t\t
+\t\tnewCell = newRow.insertCell(5);
+
+\t\tnewCell.innerHTML = '<td id=\"caseModifier\"><INPUT TYPE=\"submit\" NAME=\"ajouter\" VALUE=\"Valider\" onclick=\"validerChoix()\"></td></FORM>';
+\t}
+\t
+\tfunction validerChoix()
+\t{
+\t\tdocument.getElementById('ajoutUti').className = \"visible\"; // ligne inutile par la suite
+\t\t// Ici il faudrat envoyer à la base une requete pour rajouter le nouvel utilisateur
+\t\t// Puis actualiser la table
+\t}
+\t
+\tfunction supprimerChoix()
+\t{
+\t\tdocument.getElementById('ajoutUti').className = \"visible\"; // ligne inutile par la suite
+\t\t// Il suffit uniquement d'actualiser la page
+\t}
+\t
+</script>
 </html>
 
 ";
@@ -260,6 +176,6 @@ class __TwigTemplate_4581f7eccf2712d3595c6c32abec3a1dc2dd8cfa1d7c21406ed38c4ea68
 
     public function getDebugInfo()
     {
-        return array (  77 => 48,  31 => 4,  28 => 3,);
+        return array (  31 => 4,  28 => 3,);
     }
 }

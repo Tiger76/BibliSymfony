@@ -99,15 +99,15 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
                                 <li><button onclick=\"self.location.href='";
         // line 39
         echo $this->env->getExtension('routing')->getPath("film_categorie");
-        echo "'\" type=\"button\" onclick=\"#\" class=\"btn\">Categories</button></li>
+        echo "'\" type=\"button\"  class=\"btn\">Categories</button></li>
                                 <li><button onclick=\"self.location.href='";
         // line 40
         echo $this->env->getExtension('routing')->getPath("bibliSymfony_base_users");
-        echo "'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Utilisateurs</button></li>
+        echo "'\" type=\"button\" class=\"btn\">Gestion Utilisateurs</button></li>
                                 <li><button onclick=\"self.location.href='";
         // line 41
         echo $this->env->getExtension('routing')->getPath("film_liste");
-        echo "'\" type=\"button\" onclick=\"#\" class=\"btn\">Gestion Films</button></li>
+        echo "'\" type=\"button\"  class=\"btn\">Gestion Films</button></li>
                             </ul>
                         </div>
                     </div>

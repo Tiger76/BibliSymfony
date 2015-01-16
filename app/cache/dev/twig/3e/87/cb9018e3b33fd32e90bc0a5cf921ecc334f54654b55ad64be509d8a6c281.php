@@ -75,7 +75,10 @@ class __TwigTemplate_3e87cb9018e3b33fd32e90bc0a5cf921ecc334f54654b55ad64be509d8a
 \t\t\t\t\t\t\t\t\t\t<td>10/12/2003</td>
 \t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
-\t\t\t\t\t\t\t\t\t\t<td id=\"caseModifier\"><a href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
+\t\t\t\t\t\t\t\t\t\t<td id=\"caseModifier\"><a onclick=\"self.location.href='";
+        // line 51
+        echo $this->env->getExtension('routing')->getPath("film_homepage", array("id" => 69));
+        echo "'\" href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
 \t\t\t\t\t\t\t\t\t  </tr>
 \t\t\t\t\t\t\t\t\t  <tr>
 \t\t\t\t\t\t\t\t\t\t<td>2</td>
@@ -184,6 +187,6 @@ class __TwigTemplate_3e87cb9018e3b33fd32e90bc0a5cf921ecc334f54654b55ad64be509d8a
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,);
+        return array (  80 => 51,  31 => 4,  28 => 3,);
     }
 }
