@@ -38,13 +38,6 @@ class Categorie
     /**
      * @var string
      *
-     * @ORM\Column(name="genre", type="string", length=255)
-     */
-    private $genre;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="image", type="string", length=255)
      */
     private $image;

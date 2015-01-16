@@ -64,11 +64,11 @@ class Film
     private $tarif;
 
     /**
-     * @var boolean
+     * @var \DateTime
      *
-     * @ORM\Column(name="nouveaute", type="boolean")
+     * @ORM\Column(name="dateSortie", type="date")
      */
-    private $nouveaute;
+    private $dateSortie;
 
     /**
      * @var boolean
@@ -343,5 +343,28 @@ class Film
     public function getLienImage()
     {
         return $this->lienImage;
+    }
+
+    /**
+     * Set dateSortie
+     *
+     * @param \DateTime $dateSortie
+     * @return Film
+     */
+    public function setDateSortie($dateSortie)
+    {
+        $this->dateSortie = $dateSortie;
+    
+        return $this;
+    }
+
+    /**
+     * Get dateSortie
+     *
+     * @return \DateTime 
+     */
+    public function getDateSortie()
+    {
+        return $this->dateSortie;
     }
 }

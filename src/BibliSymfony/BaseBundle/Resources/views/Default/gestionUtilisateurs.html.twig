@@ -32,43 +32,28 @@
 									<thead>
 									  <tr>
 										<th>id</th>
-										<th>Nom</th>
-										<th>Prenom</th>
+										<th>Login</th>
 										<th>Email</th>
-										<th>Mot de passe</th>
 										<th>Adresse</th>
-										<th>Code Postale</th>
-										<th>Crédit</th>
-										<th>estAdmin</th>
+										<th>Jeton</th>
+										<th>Admin?</th>
+                                                                                <th>Liste de film</th>
 									  </tr>
 									</thead>
 									<tbody>
-									  <tr>
-										<td>1</td>
-										<td>Mark</td>
-										<td>Valerich</td>
-										<td>mark@gmail.com</td>
-										<td>pasvisible</td>
-										<td>13 la Rue du Bois, Le Havre</td>
-										<td>76600</td>
-										<td>100</td>
-										<td>Non</td>
-										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
-										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
-									  </tr>
-									  <tr>
-										<td>2</td>
-										<td>Jacob</td>
-										<td>Bensoussan</td>
-										<td>jacob@gmail.com</td>
-										<td>pasvisible</td>
-										<td>76 la Rue du Bois, Le Havre</td>
-										<td>76600</td>
-										<td>100</td>
-										<td>Non</td>
-										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
-										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
-									  </tr>
+                                                                            {% for info in listeUti %}
+                                                                                <tr>
+                                                                                    <td>{{ info.id }}</td>
+                                                                                    <td>{{ info.login }}</td>
+                                                                                    <td>{{ info.mail }}</td>
+                                                                                    <td>{{ info.adresse }}</td>
+                                                                                    <td>{{ info.monnaie }}</td>
+                                                                                    <td>{{ info.estAdmin }}</td>
+                                                                                    <td id="listeFilm"><a href="#" class="button"><span class="listeFilm">listeFilm</span></a></td>
+                                                                                    <td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
+                                                                                    <td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
+                                                                                </tr>
+                                                                            {% endfor %}
 									</tbody>
 								</table>
 								<div id="ajoutUti" class="visible">
@@ -112,41 +97,33 @@
 
 		newCell = newRow.insertCell(1);
 
-		newCell.innerHTML = '<INPUT type=text name="nom">';
+		newCell.innerHTML = '<INPUT type=text name="Login">';
 		
 		newCell = newRow.insertCell(2);
 
-		newCell.innerHTML = '<INPUT type=text name="prenom">';
+		newCell.innerHTML = '<INPUT type=text name="Email">';
 		
 		newCell = newRow.insertCell(3);
 
-		newCell.innerHTML = '<INPUT type=text name="email">';
+		newCell.innerHTML = '<INPUT type=text name="Adresse">';
 		
 		newCell = newRow.insertCell(4);
 
-		newCell.innerHTML = '<INPUT type=text name="mdp">';
+		newCell.innerHTML = '<INPUT type=text name="Jeton">';
 		
 		newCell = newRow.insertCell(5);
 
-		newCell.innerHTML = '<INPUT type=text name="adresse">';
-		
-		newCell = newRow.insertCell(6);
-
-		newCell.innerHTML = '<INPUT type=text name="cp">';
-		
-		newCell = newRow.insertCell(7);
-
-		newCell.innerHTML = '<INPUT type=text name="credit">';
-		
-		newCell = newRow.insertCell(8);
-
 		newCell.innerHTML = '<FORM NAME="Choix"><SELECT NAME="adminChoix" onChange="Lien()"><OPTION VALUE="">Administrateur?<OPTION VALUE="true">Oui<OPTION VALUE="false">Non</SELECT></FORM>';
 		
-		newCell = newRow.insertCell(9);
+                newCell = newRow.insertCell(6);
+
+		newCell.innerHTML = '<td></td>';
+                
+		newCell = newRow.insertCell(7);
 
 		newCell.innerHTML = '<td id="caseSuppression"><INPUT TYPE="submit" NAME="annuler" VALUE="Annuler" onclick="supprimerChoix()"></td>';
 		
-		newCell = newRow.insertCell(10);
+		newCell = newRow.insertCell(8);
 
 		newCell.innerHTML = '<td id="caseModifier"><INPUT TYPE="submit" NAME="ajouter" VALUE="Valider" onclick="validerChoix()"></td></FORM>';
 	}

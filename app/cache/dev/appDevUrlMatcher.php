@@ -136,7 +136,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             if (0 === strpos($pathinfo, '/films/ge')) {
                 // film_gestionBa
                 if ($pathinfo === '/films/gestionBa') {
+<<<<<<< HEAD
                     return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionBaAction',  '_route' => 'film_gestionBa',);
+=======
+                    return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::gestionDifBaAction',  '_route' => 'film_gestionBa',);
+>>>>>>> d821d7a7b83726dad69d1851a501253bee0be2f9
                 }
 
                 // film_liste

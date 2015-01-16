@@ -8,24 +8,34 @@ class DefaultController extends Controller
 {
     public function categorieFilmAction()
     {
-        return $this->render('FilmBundle:Default:categorieFilm.html.twig');
+        $listeCateg =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Categorie")
+                ->findAll();
         
+        return $this->render('FilmBundle:Default:categorieFilm.html.twig', array('listeCateg' => $listeCateg));
     }
     
-     public function ficheFilmAction()
+     public function ficheFilmAction($id)
     {
-        return $this->render('FilmBundle:Default:ficheFilm.html.twig');
+        $film =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Film")
+                ->find($id);
+        return $this->render('FilmBundle:Default:ficheFilm.html.twig',array('film'=>$film));
         
     }
     
      public function gestionFilmsAction()
     {
-        return $this->render('FilmBundle:Default:gestionFilms.html.twig');
+        $listeFilms =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Film")
+                ->findAll();
+
+        return $this->render('FilmBundle:Default:gestionFilms.html.twig', array('listeFilms' => $listeFilms));
         
     }
     public function gestionDifBaAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig');
+        return $this->render('FilmBundle:Default:gestionDifBA.html.twig');
         
     }
 }

@@ -3,7 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/accueil.html.twig</file>
+=======
+            <file>file:/C:/wamp/www/BibliSymfony/app/config/parameters.yml</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Resources/views/Default/categorieFilm.html.twig</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Categorie.php</file>
+>>>>>>> d821d7a7b83726dad69d1851a501253bee0be2f9
         </group>
     </open-files>
 </project-private>

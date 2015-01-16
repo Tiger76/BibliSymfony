@@ -40,26 +40,18 @@
 									  </tr>
 									</thead>
 									<tbody>
+									{% for info in listeFilms %}
 									  <tr>
-										<td>1</td>
-										<td>Titre nul</td>
-										<td>Porn</td>
-										<td>20</td>
-										<td>10/12/2003</td>
+										<td>{{info.id}}</td>
+										<td>{{info.titre}}</td>
+										<td>{{info.idCategorie.titre}}</td>
+										<td>{{info.tarif}}</td>
+										<td>{{info.nouveaute}}</td>
 										
 										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
-										<td id="caseModifier"><a onclick="self.location.href='{{ path('film_homepage', {'id': 69}) }}'" href="#" class="button"><span class="modifier">Modifier</span></a></td>
+										<td id="caseModifier"><a onclick="self.location.href='{{ path('film_homepage', {'id': info.id}) }}'" href="#" class="button"><span class="modifier">Modifier</span></a></td>
 									  </tr>
-									  <tr>
-										<td>2</td>
-										<td>Jesus 2 le retour/td>
-										<td>Histoire</td>
-										<td>10</td>
-										<td>01/04/1987</td>
-										
-										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
-										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
-									  </tr>
+									{% endfor %}
 									</tbody>
 								</table>
 								<div id="ajoutUti" class="visible">
