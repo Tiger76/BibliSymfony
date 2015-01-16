@@ -25,7 +25,7 @@ class DefaultController extends Controller
     }
     public function gestionDifBaAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig');
+        return $this->render('FilmBundle:Default:gestionDifBA.html.twig');
         
     }
 }
