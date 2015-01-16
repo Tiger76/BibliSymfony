@@ -92,7 +92,7 @@ class __TwigTemplate_3e87cb9018e3b33fd32e90bc0a5cf921ecc334f54654b55ad64be509d8a
             echo "</td>
 \t\t\t\t\t\t\t\t\t\t<td>";
             // line 49
-            echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "nouveaute", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["info"], "dateSortie", array()), "d/m/Y"), "html", null, true);
             echo "</td>
 \t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
