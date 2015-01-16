@@ -18,7 +18,11 @@ class DefaultController extends Controller
     
     public function gestionUtilisateursAction()
     {
-        return $this->render('BaseBundle:Default:gestionUtilisateurs.html.twig');
+        $listeUti =  $this->getDoctrine()->getManager()
+                ->getRepository("BaseBundle:Utilisateur")
+                ->findAll();
+        
+        return $this->render('BaseBundle:Default:gestionUtilisateurs.html.twig', array('listeUti' => $listeUti));
     }
 
     /*public function gestionUtilisateursAction()

@@ -13,7 +13,6 @@ class DefaultController extends Controller
                 ->findAll();
         
         return $this->render('FilmBundle:Default:categorieFilm.html.twig', array('listeCateg' => $listeCateg));
-        
     }
     
      public function ficheFilmAction()

@@ -64,11 +64,11 @@ class Film
     private $tarif;
 
     /**
-     * @var boolean
+     * @var \DateTime
      *
-     * @ORM\Column(name="nouveaute", type="boolean")
+     * @ORM\Column(name="dateSortie", type="date")
      */
-    private $nouveaute;
+    private $dateSortie;
 
     /**
      * @var boolean
