@@ -8,8 +8,11 @@
             <file>file:/C:/xampp/htdocs/BibliSymfony/app/Resources/views/base.html.twig</file>
 =======
             <file>file:/C:/wamp/www/BibliSymfony/app/config/parameters.yml</file>
+<<<<<<< HEAD
+=======
             <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Film.php</file>
 >>>>>>> 119fdb73ec96c78be7a7bd21bdb7f5599e39f04b
+>>>>>>> 9a28c07c673e7e5ee661e8d377f15b8b3bfe43fa
         </group>
     </open-files>
 </project-private>
