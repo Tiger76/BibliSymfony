@@ -58,10 +58,7 @@ class __TwigTemplate_0b0c28daff4dbafa66037ed4c8958d3b97c868ff0fe100161ad11b0b1fb
         // line 30
         echo $this->env->getExtension('routing')->getPath("bibliSymfony_base_accueil");
         echo "\" type=\"submit\" class=\"btn btn-info\">Connexion</a><br><br>
-\t\t\t\t        <a href=\"";
-        // line 31
-        echo $this->env->getExtension('routing')->getPath("bibliSymfony_base_accueil");
-        echo "\" type=\"invite\" class=\"btn btn-info\">Poursuivre en tant qu'invité</a>
+\t\t\t\t        
 \t\t\t\t</form>\t
 \t\t\t</div>
 \t\t<div>
@@ -86,6 +83,6 @@ class __TwigTemplate_0b0c28daff4dbafa66037ed4c8958d3b97c868ff0fe100161ad11b0b1fb
 
     public function getDebugInfo()
     {
-        return array (  63 => 31,  59 => 30,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  59 => 30,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
     }
 }

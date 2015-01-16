@@ -94,12 +94,12 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
         echo $this->env->getExtension('routing')->getPath("bibliSymfony_base_accueil");
         echo "\">Accueil</a></li>
                                 
-                                <li><a href=\"";
-        // line 37
-        echo $this->env->getExtension('routing')->getPath("film_categorie");
-        echo "\">Categories</a></li>
-
                                 
+
+                                <li><button onclick=\"self.location.href='";
+        // line 39
+        echo $this->env->getExtension('routing')->getPath("film_categorie");
+        echo "'\" type=\"button\" onclick=\"#\" class=\"btn\">Categories</button></li>
                                 <li><button onclick=\"self.location.href='";
         // line 40
         echo $this->env->getExtension('routing')->getPath("bibliSymfony_base_users");
@@ -188,6 +188,6 @@ class __TwigTemplate_08b6cb16b1ec8fa7941b908ebddab5799ade52450287e76b5e31bb7e9bd
 
     public function getDebugInfo()
     {
-        return array (  175 => 51,  170 => 49,  165 => 19,  159 => 4,  127 => 52,  125 => 51,  122 => 50,  120 => 49,  109 => 41,  105 => 40,  99 => 37,  94 => 35,  85 => 29,  72 => 20,  70 => 19,  65 => 17,  61 => 16,  57 => 15,  52 => 13,  48 => 12,  44 => 11,  40 => 10,  36 => 9,  28 => 4,  23 => 1,);
+        return array (  175 => 51,  170 => 49,  165 => 19,  159 => 4,  127 => 52,  125 => 51,  122 => 50,  120 => 49,  109 => 41,  105 => 40,  101 => 39,  94 => 35,  85 => 29,  72 => 20,  70 => 19,  65 => 17,  61 => 16,  57 => 15,  52 => 13,  48 => 12,  44 => 11,  40 => 10,  36 => 9,  28 => 4,  23 => 1,);
     }
 }

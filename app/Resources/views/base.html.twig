@@ -34,9 +34,9 @@
                             <ul class="nav pull-right col-md-7">
                                 <li><a href="{{ path('bibliSymfony_base_accueil') }}">Accueil</a></li>
                                 
-                                <li><a href="{{ path('film_categorie') }}">Categories</a></li>
-
                                 
+
+                                <li><button onclick="self.location.href='{{ path('film_categorie') }}'" type="button" onclick="#" class="btn">Categories</button></li>
                                 <li><button onclick="self.location.href='{{ path('bibliSymfony_base_users') }}'" type="button" onclick="#" class="btn">Gestion Utilisateurs</button></li>
                                 <li><button onclick="self.location.href='{{ path('film_liste') }}'" type="button" onclick="#" class="btn">Gestion Films</button></li>
                             </ul>
