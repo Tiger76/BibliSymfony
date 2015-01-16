@@ -4,7 +4,7 @@
 
 <html>
 <head>
-	<title>Catalogue</title>
+	<title>Catégories</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="assets/css/global.css" />
@@ -37,25 +37,16 @@
 									  </tr>
 									</thead>
 									<tbody>
-									  <tr>
-										<td>1</td>
-										<td>Horreur</td>
-										<td>Du gore, des filles stupides, et les noirs qui crevent les premiers comme toujours !</td>
-										<td></td>
-										
-										
-										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
-										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
-									  </tr>
-									  <tr>
-										<td>2</td>
-										<td>Porn</td>
-										<td>T'as vraiment besoin d'une description ?</td>
-										<td></td>
-										
-										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
-										<td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
-									  </tr>
+                                                                          {% for info in listeCateg %}
+                                                                            <tr>
+                                                                                  <td>{{ info.id }}</td>
+                                                                                  <td>{{ info.titre }}</td>
+                                                                                  <td>{{ info.description }}</td>
+                                                                                  <td>{{ info.image }}</td>
+                                                                                  <td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
+                                                                                  <td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
+                                                                            </tr>
+                                                                          {% endfor %}
 									</tbody>
 								</table>
 								<div id="ajoutUti" class="visible">

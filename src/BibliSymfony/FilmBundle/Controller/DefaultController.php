@@ -8,7 +8,11 @@ class DefaultController extends Controller
 {
     public function categorieFilmAction()
     {
-        return $this->render('FilmBundle:Default:categorieFilm.html.twig');
+        $listeCateg =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Categorie")
+                ->findAll();
+        
+        return $this->render('FilmBundle:Default:categorieFilm.html.twig', array('listeCateg' => $listeCateg));
         
     }
     
