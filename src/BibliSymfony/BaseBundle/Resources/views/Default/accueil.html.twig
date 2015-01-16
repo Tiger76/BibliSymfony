@@ -1,57 +1,96 @@
 {% extends "::base.html.twig" %}
 
 {% block body %}
-        <!-- end navbar -->
         <div class="main">
-            <div class="container">
-                <div class="row">
-                    <div class="box-wrapper span9">
-                        <div class="row">
-                            <div class="widget"  style="padding:0 10px;">
-                                <div>
-                                    <div class="title">
-                                        <h3><a href="#">Catégories</a></h3>
-                                    </div>
-                                    <p><a href="#"><img src="categs.jpg"></a></p>
-                                </div>
-                            </div><!-- widget -->
-                        </div>
-                    </div>
+	<div class="container">
+		<div class="row">
+			<div class="box-wrapper span9">
+				<div class="row">
+					<div class="widget">
+							<div class="Action">
+								<div class="title">
+                                                                    <center><h3><a href="#">Bienvenue</a></h3></center>
+                                                                    <center> on pourrait mettre un logo?</center>
+								</div>
+								
+							</div>
+					</div><!-- widget -->
 
+			<div class="box-content-widget span9">
+				<div class="row">
+					<div class="widget">
+                                            <div class="Action">
+						<div class="title">
+                                                    <center><h3><a href="#">le concept</a></h3></center>
+                                                    <center> Nous sommes des gens qui ont eu l'idée de faire ce site ....<br>
+                                                            ou alors, une photo de nous tous ou pas ! 
+                                                    </center>
+						</div>
+								
+                                            </div>
+					</div><!-- widget -->
+						
+				</div><!-- row -->
+	</div><!-- box-content-widget -->
+</div>
+</div><!-- end body-content -->
+			
+			<div class="sidebar-content span3">
+				<div class="row">
+					
+				</div><!-- row -->
+				<div class="row">
+					<div class="box-wrapper span3">
+						<div class="row">
+							<div class="title bg-title span3">
+								<h3>Dernier ajout</h3>
+							</div>
+						</div>
+						<ul class="thumbnails thumbnails-horizontal">
+							
+							<li class="span3">
+								<div class="thumbnail border-radius-top">
+									<div class="bg-thumbnail-img">
+										<a class="overlay" href="detail.html">
+                                                                                    
+										</a>
+									
+									</div>
+									
+									<h5><a href="detail.html"> </a></h5>
+								</div>
+								<div class="box border-radius-bottom">
+									<p>
+										<span class="title_torrent pull-left">Titre du film</span>
+										<span class="number-view pull-right">prix jeton</span>
+									</p>
+								</div>
+							</li>
 
-                    <div class="box-wrapper span9">
-                        <div class="row">
-                            <div class="widget"  style="padding:0 10px;">
-                                <div>
-                                    <div class="title">
-                                        <h3><a href="#">Catalogue</a></h3>
-                                    </div>
-                                    <p><a href="#"><img src="films.jpg"></a></p>
-                                </div>
-                            </div><!-- widget -->
-                        </div>
+							<li class="span3">
+								<div class="thumbnail border-radius-top">
+									<div class="bg-thumbnail-img">
+										<a class="overlay" href="detail.html">
+											
+										</a>
+									
+									</div>
+									
+									<h5><a href="detail.html"> </a></h5>
+								</div>
+								<div class="box border-radius-bottom">
+									<p>
+										<span class="title_torrent pull-left">Titre du film</span>
+										<span class="number-view pull-right">prix jeton</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div><!-- end thumbnails-style1 -->
+				</div><!-- row -->
 
-
-                    </div>
-
-                    <div class="box-wrapper span9">
-                        <div class="row">
-                            <div class="widget"  style="padding:0 10px;">
-                                <div>
-                                    <div class="title">
-                                        <h3><a href="#">Utilisateurs</a></h3>
-                                    </div>
-                                    <p><a href="#"><img src="utili.jpg"></a></p>
-                                </div>
-                            </div><!-- widget -->
-                        </div>
-
-
-                    </div><!-- end body-content -->
-                    
-                   
-
-                </div><!-- row -->
-            </div><!-- end container -->
-        </div><!-- end main -->
+			</div><!-- end sidebar-content -->
+		</div><!-- row -->
+	</div><!-- end container -->
+</div><!-- end main -->
 {% endblock %}
