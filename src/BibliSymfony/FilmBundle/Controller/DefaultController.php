@@ -8,19 +8,19 @@ class DefaultController extends Controller
 {
     public function categorieFilmAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig');
+        return $this->render('FilmBundle:Default:categorieFilm.html.twig');
         
     }
     
      public function ficheFilmAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig');
+        return $this->render('FilmBundle:Default:ficheFilm.html.twig');
         
     }
     
      public function gestionFilmsAction()
     {
-        return $this->render('FilmBundle:Default:index.html.twig');
+        return $this->render('FilmBundle:Default:gestionFilms.html.twig');
         
     }
     public function gestionDifBaAction()
