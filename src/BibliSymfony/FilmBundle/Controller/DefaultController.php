@@ -15,7 +15,7 @@ class DefaultController extends Controller
         return $this->render('FilmBundle:Default:categorieFilm.html.twig', array('listeCateg' => $listeCateg));
     }
     
-     public function ficheFilmAction($id)
+    public function ficheFilmAction($id)
     {
         $film =  $this->getDoctrine()->getManager()
                 ->getRepository("FilmBundle:Film")
@@ -24,7 +24,7 @@ class DefaultController extends Controller
         
     }
     
-     public function gestionFilmsAction()
+    public function gestionFilmsAction()
     {
         $listeFilms =  $this->getDoctrine()->getManager()
                 ->getRepository("FilmBundle:Film")

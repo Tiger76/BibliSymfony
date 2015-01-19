@@ -32,10 +32,7 @@
                         </div>
                         <div class=" nav-collapse">
                             <ul class="nav pull-right col-md-7">
-                                <li><a href="{{ path('bibliSymfony_base_accueil') }}">Accueil</a></li>
-                                
-                                
-
+                                <li><button onclick="self.location.href='{{ path('bibliSymfony_base_accueil') }}'" type="button"  class="btn">Accueil</button></li>
                                 <li><button onclick="self.location.href='{{ path('film_categorie') }}'" type="button"  class="btn">Gestion Categories</button></li>
                                 <li><button onclick="self.location.href='{{ path('bibliSymfony_base_users') }}'" type="button" class="btn">Gestion Utilisateurs</button></li>
                                 <li><button onclick="self.location.href='{{ path('film_liste') }}'" type="button"  class="btn">Gestion Films</button></li>

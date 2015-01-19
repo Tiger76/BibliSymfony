@@ -344,4 +344,27 @@ class Film
     {
         return $this->lienImage;
     }
+
+    /**
+     * Set dateSortie
+     *
+     * @param \DateTime $dateSortie
+     * @return Film
+     */
+    public function setDateSortie($dateSortie)
+    {
+        $this->dateSortie = $dateSortie;
+    
+        return $this;
+    }
+
+    /**
+     * Get dateSortie
+     *
+     * @return \DateTime 
+     */
+    public function getDateSortie()
+    {
+        return $this->dateSortie;
+    }
 }

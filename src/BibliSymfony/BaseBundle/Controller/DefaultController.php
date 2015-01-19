@@ -24,6 +24,15 @@ class DefaultController extends Controller
         
         return $this->render('BaseBundle:Default:gestionUtilisateurs.html.twig', array('listeUti' => $listeUti));
     }
+    
+    public function gestionLocationsAction($id)
+    {
+        $location =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Location")
+                ->findByIdUtilisateur($id);
+        return $this->render('BaseBundle:Default:gestionLocations.html.twig',array('location'=>$location));
+        
+    }
 
     /*public function gestionUtilisateursAction()
     {
