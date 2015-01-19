@@ -35,7 +35,10 @@ class DefaultController extends Controller
     }
     public function gestionDifBaAction()
     {
-        return $this->render('FilmBundle:Default:gestionDifBA.html.twig');
+        $listeFilms =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Film")
+                ->findAll();
+        return $this->render('FilmBundle:Default:gestionDifBA.html.twig', array('listeFilms' => $listeFilms));
         
     }
 }
