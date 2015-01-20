@@ -1,0 +1,26 @@
+
+            td > a{
+                color : white;
+                font-weight: bold;
+            }
+            
+            td > a:hover{
+                text-decoration: none;
+                color : #222;
+            }
+            
+            table tr.courant td:nth-child(even) {
+                background: #475;
+            }
+
+            table tr.courant td:nth-child(odd) { 
+                background: #494;
+            }
+            
+            table tr.historique td:nth-child(even){
+                background: #d77;
+            }
+
+            table tr.historique td:nth-child(odd) { 
+                background: #e44;
+            }

@@ -1,24 +1,6 @@
 {% extends "::base.html.twig" %}
 
 {% block body %}
-
-<html>
-<head>
-	<title>element</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/global.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/color-button.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/element.css" />
-	<!-- js Boots_from -->
-	<script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-	<!-- end Boots_from -->
-</head>
-
-<body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true">
-
 <div class="main">
 	<div class="container">
 		<div class="row">
@@ -49,7 +31,8 @@
                                                                                     <td>{{ info.adresse }}</td>
                                                                                     <td>{{ info.monnaie }}</td>
                                                                                     <td>{{ info.estAdmin }}</td>
-                                                                                    <td id="listeFilm"><a href="#" class="button"><span class="listeFilm">listeFilm</span></a></td>
+                                                                                    <td id="listeFilm"><a onclick="self.location.href='{{ path('bibliSymfony_base_location', {'id': info.id}) }}'" href="#" class="button">Liste Location</a></td>
+                                                                                    <!--<td id="listeFilm"><a href="#" class="button"><span class="listeFilm">listeFilm</span></a></td>-->
                                                                                     <td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
                                                                                     <td id="caseModifier"><a href="#" class="button"><span class="modifier">Modifier</span></a></td>
                                                                                 </tr>

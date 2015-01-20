@@ -6,6 +6,10 @@ bibliSymfony_base_users:
     path:     /users
     defaults: { _controller: BaseBundle:Default:gestionUtilisateurs }
 
+bibliSymfony_base_location:
+    path:     /{id}
+    defaults: { _controller: BaseBundle:Default:gestionLocations }
+    
 bibliSymfony_base_login:
     path:     /
     defaults: { _controller: BaseBundle:Default:login }

@@ -10,6 +10,7 @@
         <link type="text/css" rel="stylesheet" href="{{ asset('bundles/base/css/global.css') }}" />
         <link type="text/css" rel="stylesheet" href="{{ asset('bundles/base/css/color-button.css') }}" />
         <link type="text/css" rel="stylesheet" href="{{ asset('bundles/base/css/element.css') }}" />
+        
         <!-- js Boots_from -->
         <script src="{{ asset('bundles/base/js/jquery.js') }}"></script>
         <script src="{{ asset('bundles/base/js/bootstrap.min.js') }}"></script>
@@ -25,16 +26,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
+                            <img rel="icon" src="{{asset('bundles/base/images/favicon_logo.ico')}}" type="image/x-icon" style="position:relative; float:left; padding:5px; margin-top: 4px">
                             <a class="brand" href="{{ path('bibliSymfony_base_accueil') }}">
                                 <span>Bibli</span><span class="cl-blue">Stream</span>
                             </a>
                         </div>
                         <div class=" nav-collapse">
                             <ul class="nav pull-right col-md-7">
-                                <li><a href="{{ path('bibliSymfony_base_accueil') }}">Accueil</a></li>
-                                
-                                
-
+                                <li><button onclick="self.location.href='{{ path('bibliSymfony_base_accueil') }}'" type="button"  class="btn">Accueil</button></li>
                                 <li><button onclick="self.location.href='{{ path('film_categorie') }}'" type="button"  class="btn">Gestion Categories</button></li>
                                 <li><button onclick="self.location.href='{{ path('bibliSymfony_base_users') }}'" type="button" class="btn">Gestion Utilisateurs</button></li>
                                 <li><button onclick="self.location.href='{{ path('film_liste') }}'" type="button"  class="btn">Gestion Films</button></li>

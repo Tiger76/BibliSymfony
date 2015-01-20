@@ -17,13 +17,17 @@
 }
 
 .user{
-	background:url(//localhost/templatesFini/assets/img/icons/user.gif) no-repeat 350px 1px;
+	background:url(//localhost/templatesFini/assets/img/icons/user.gif) no-repeat 250px 1px;
 	text-indent:30px;
 	display:block;
 }
 
 .widget{
-	width: initial;
+	width: 140%;
+}
+
+#widgetAccueil{
+    width: 100%;
 }
 
 .cachee {
