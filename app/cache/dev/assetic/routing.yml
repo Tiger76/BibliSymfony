@@ -1,9 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-<<<<<<< HEAD
-    resource: 'C:/xampp/htdocs/BibliSymfony/app/config/routing_dev.yml'
-=======
-    resource: /var/www/symfo/BibliSymfony/app/config/routing_dev.yml
->>>>>>> d821d7a7b83726dad69d1851a501253bee0be2f9

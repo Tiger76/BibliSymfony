@@ -9,6 +9,10 @@ film_gestionBa:
 film_liste:
     path:     /gererFilms
     defaults: { _controller: FilmBundle:Default:gestionFilms }
+
+film_liste_ajout:
+    path:     /ajoutFilm
+    defaults: { _controller: FilmBundle:Default:ajoutFilm }
     
 film_homepage:
     path:     /{id}
