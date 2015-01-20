@@ -196,12 +196,12 @@ class Utilisateur
     /**
      * Add listeFilm
      *
-     * @param \BibliSymfony\BaseBundle\Entity\Location $listeFilm
+     * @param \BibliSymfony\FilmBundle\Entity\Location $loc
      * @return Utilisateur
      */
-    public function addListeFilm(\BibliSymfony\BaseBundle\Entity\Location $listeFilm)
+    public function addListeFilm(\BibliSymfony\FilmBundle\Entity\Location $loc)
     {
-        $this->listeFilm[] = $listeFilm;
+        $this->listeFilm[] = $loc;
     
         return $this;
     }
@@ -209,9 +209,9 @@ class Utilisateur
     /**
      * Remove listeFilm
      *
-     * @param \BibliSymfony\BaseBundle\Entity\Location $listeFilm
+     * @param \BibliSymfony\FilmBundle\Entity\Location $listeFilm
      */
-    public function removeListeFilm(\BibliSymfony\BaseBundle\Entity\Location $listeFilm)
+    public function removeListeFilm(\BibliSymfony\FilmBundle\Entity\Location $listeFilm)
     {
         $this->listeFilm->removeElement($listeFilm);
     }
