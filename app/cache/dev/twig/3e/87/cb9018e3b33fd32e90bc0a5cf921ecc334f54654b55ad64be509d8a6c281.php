@@ -62,7 +62,7 @@ class __TwigTemplate_3e87cb9018e3b33fd32e90bc0a5cf921ecc334f54654b55ad64be509d8a
 \t\t\t\t\t\t\t\t<table id=\"tableUser\" class=\"table table-striped table-bordered table-condensed\">
 \t\t\t\t\t\t\t\t\t<thead>
 \t\t\t\t\t\t\t\t\t  <tr>
-\t\t\t\t\t\t\t\t\t\t<th>id</th>
+\t\t\t\t\t\t\t\t\t\t<th>N°</th>
 \t\t\t\t\t\t\t\t\t\t<th>Titre</th>
 \t\t\t\t\t\t\t\t\t\t<th>Catégorie</th>
 \t\t\t\t\t\t\t\t\t\t<th>Tarif</th>
@@ -101,11 +101,14 @@ class __TwigTemplate_3e87cb9018e3b33fd32e90bc0a5cf921ecc334f54654b55ad64be509d8a
             echo "</td>
 \t\t\t\t\t\t\t\t\t\t
 
-\t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
+\t\t\t\t\t\t\t\t\t\t<td id=\"caseSuppression\"><a onclick=\"self.location.href='";
+            // line 54
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("film_supprimer", array("id" => $this->getAttribute($context["info"], "id", array()))), "html", null, true);
+            echo "'\"href=\"#\" class=\"button\"><span class=\"delete\">Suppression</span></a></td>
 \t\t\t\t\t\t\t\t\t\t<td id=\"caseModifier\"><a onclick=\"self.location.href='";
             // line 55
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("film_homepage", array("id" => $this->getAttribute($context["info"], "id", array()))), "html", null, true);
-            echo "'\" href=\"#\" class=\"button\"><span class=\"modifier\">Modifier</span></a></td>
+            echo "'\" href=\"#\" class=\"button\"><span class=\"modifier\">Fiche</span></a></td>
 \t\t\t\t\t\t\t\t\t  </tr>
 \t\t\t\t\t\t\t\t\t";
         }
@@ -155,23 +158,36 @@ class __TwigTemplate_3e87cb9018e3b33fd32e90bc0a5cf921ecc334f54654b55ad64be509d8a
 
 \t\tvar newCell = newRow.insertCell(0);
 
-\t\tnewCell.innerHTML = 'id auto';
+\t\tnewCell.innerHTML = '-';
 
 \t\tnewCell = newRow.insertCell(1);
 
-\t\tnewCell.innerHTML = '<INPUT type=text name=\"Titre\">';
+\t\tnewCell.innerHTML = '<INPUT type=text name=\"Titre\" required>';
 
 \t\tnewCell = newRow.insertCell(2);
 
-\t\tnewCell.innerHTML = '<INPUT type=text name=\"Categorie\">';
+\t\tnewCell.innerHTML = '<SELECT NAME=\"Categorie\" onChange=\"Lien()\" required> ";
+        // line 108
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["listeCateg"]) ? $context["listeCateg"] : $this->getContext($context, "listeCateg")));
+        foreach ($context['_seq'] as $context["_key"] => $context["categ"]) {
+            echo " <OPTION VALUE=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["categ"], "id", array()), "html", null, true);
+            echo "\">";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["categ"], "titre", array()), "html", null, true);
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['categ'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        echo "</SELECT>';
 \t\t
 \t\tnewCell = newRow.insertCell(3);
 
-\t\tnewCell.innerHTML = '<INPUT type=text name=\"Tarif\">';
+\t\tnewCell.innerHTML = '<INPUT type=number min=\"0\" max=\"25\" name=\"Tarif\" required>';
 \t\t
 \t\tnewCell = newRow.insertCell(4);
 
-\t\tnewCell.innerHTML = '<INPUT type=date name=\"Date_de_sortie\">';
+\t\tnewCell.innerHTML = '<INPUT type=date name=\"Date_de_sortie\" required >';
 \t\t
 \t\tnewCell = newRow.insertCell(5);
 
@@ -214,6 +230,6 @@ class __TwigTemplate_3e87cb9018e3b33fd32e90bc0a5cf921ecc334f54654b55ad64be509d8a
 
     public function getDebugInfo()
     {
-        return array (  116 => 58,  107 => 55,  100 => 51,  95 => 49,  91 => 48,  87 => 47,  83 => 46,  80 => 45,  76 => 44,  60 => 31,  31 => 4,  28 => 3,);
+        return array (  171 => 108,  119 => 58,  110 => 55,  106 => 54,  100 => 51,  95 => 49,  91 => 48,  87 => 47,  83 => 46,  80 => 45,  76 => 44,  60 => 31,  31 => 4,  28 => 3,);
     }
 }

@@ -32,8 +32,25 @@ class DefaultController extends Controller
                 ->getRepository("FilmBundle:Film")
                 ->findAll();
 
-        return $this->render('FilmBundle:Default:gestionFilms.html.twig', array('listeFilms' => $listeFilms));
+         $listeCateg =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Categorie")
+                ->findAll();
+
+        return $this->render('FilmBundle:Default:gestionFilms.html.twig', array('listeFilms' => $listeFilms,'listeCateg' => $listeCateg));
         
+    }
+
+    public function supprimeFilmAction($id)
+    {
+        
+        // ATTENTION ici on supprime
+        $em = $this->getDoctrine()->getManager();
+        $film = $em->getRepository("FilmBundle:Film")->find($id);
+        $em->remove($film);
+        $em->flush();
+
+        
+        return $this->redirect($this->generateUrl('film_liste'));
     }
 
    
@@ -60,20 +77,13 @@ class DefaultController extends Controller
         $film->setTarif($this->get('request')->request->get('Tarif'));
         $film->setDateSortie($date);
         $film->setbaDif(false);
-        $film->setIdCategorie($categorie);
-        
-        
-        
+        $film->setIdCategorie($categorie);        
         
         $em = $this->getDoctrine()->getManager();
         $em->persist($film);
         $em->flush();
 
-        $listeFilms =  $this->getDoctrine()->getManager()
-                ->getRepository("FilmBundle:Film")
-                ->findAll();
-
-        return $this->render('FilmBundle:Default:gestionFilms.html.twig', array('listeFilms' => $listeFilms));
+        return $this->redirect($this->generateUrl('film_liste'));
     }
 
     public function gestionDifBaAction()
