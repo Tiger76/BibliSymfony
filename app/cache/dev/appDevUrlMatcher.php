@@ -146,6 +146,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             }
 
+            // film_liste_ajout
+            if ($pathinfo === '/films/ajoutFilm') {
+                return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::ajoutFilmAction',  '_route' => 'film_liste_ajout',);
+            }
+
             // film_homepage
             if (preg_match('#^/films/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'film_homepage')), array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::ficheFilmAction',));

@@ -47,12 +47,10 @@
 										<td>{{info.titre}}</td>
 										<td>{{info.idCategorie.titre}}</td>
 										<td>{{info.tarif}}</td>
-<<<<<<< HEAD
+
 										<td>{{info.dateSortie|date("m/d/Y")}}</td>
 										
-=======
-										<td>{{info.dateSortie|date("d/m/Y")}}</td>
->>>>>>> 5488c0f3bcb71e8d0042b28e1abe49459c6ddaa3
+
 										<td id="caseSuppression"><a href="#" class="button"><span class="delete">Suppression</span></a></td>
 										<td id="caseModifier"><a onclick="self.location.href='{{ path('film_homepage', {'id': info.id}) }}'" href="#" class="button"><span class="modifier">Modifier</span></a></td>
 									  </tr>
