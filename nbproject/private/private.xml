@@ -3,25 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/xampp/htdocs/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/accueil.html.twig</file>
-=======
-            <file>file:/C:/wamp/www/BibliSymfony/app/config/parameters.yml</file>
-<<<<<<< HEAD
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/public/css/color-button.css</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Resources/views/Default/gestionLocations.html.twig</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/public/css/bootstrap.min.css</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/accueil.html.twig</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/gestionUtilisateurs.html.twig</file>
-            <file>file:/C:/wamp/www/BibliSymfony/app/Resources/views/base.html.twig</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Film.php</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/public/css/element.css</file>
-=======
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Resources/views/Default/categorieFilm.html.twig</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Entity/Utilisateur.php</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/gestionLocations.html.twig</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Resources/views/Default/gestionFilms.html.twig</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Controller/DefaultController.php</file>
             <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Controller/DefaultController.php</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Categorie.php</file>
->>>>>>> d821d7a7b83726dad69d1851a501253bee0be2f9
->>>>>>> f85b0b0fcec35a2d02ba8275ac244e2303c75567
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/gestionUtilisateurs.html.twig</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Location.php</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/config/routing.yml</file>
         </group>
     </open-files>
 </project-private>

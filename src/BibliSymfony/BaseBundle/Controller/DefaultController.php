@@ -29,8 +29,16 @@ class DefaultController extends Controller
     {
         $location =  $this->getDoctrine()->getManager()
                 ->getRepository("FilmBundle:Location")
-                ->findByIdUtilisateur($id);
-        return $this->render('BaseBundle:Default:gestionLocations.html.twig',array('location'=>$location));
+                ->findByIdUtilisateur($id, array('dateLocation' => 'DESC'));
+        
+        $utilisateur = $this->getDoctrine()->getManager()
+                ->getRepository("BaseBundle:Utilisateur")
+                ->findOneById($id)->getLogin();
+        //$logger = $this->get('logger');
+        //$logger->error('GTH : '.print_r($utili));
+        //$utilisateur = $utili->getLogin();
+        
+        return $this->render('BaseBundle:Default:gestionLocations.html.twig',array('location'=>$location, 'utilisateur'=>$utilisateur));
         
     }
 
