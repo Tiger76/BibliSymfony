@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Entity/Utilisateur.php</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/gestionLocations.html.twig</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Resources/config/routing.yml</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Resources/views/Default/gestionFilms.html.twig</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Controller/DefaultController.php</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Controller/DefaultController.php</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/gestionUtilisateurs.html.twig</file>
-            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/FilmBundle/Entity/Location.php</file>
+            <file>file:/C:/wamp/www/BibliSymfony/app/config/routing.yml</file>
+            <file>file:/C:/wamp/www/BibliSymfony/web/bundles/base/css/element.css</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/views/Default/login.html.twig</file>
+            <file>file:/C:/wamp/www/BibliSymfony/app/config/security.yml</file>
+            <file>file:/C:/wamp/www/BibliSymfony/app/Resources/views/base.html.twig</file>
             <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/BibliSymfony/src/BibliSymfony/BaseBundle/Resources/public/css/element.css</file>
         </group>
     </open-files>
 </project-private>

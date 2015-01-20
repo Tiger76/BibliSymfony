@@ -1,6 +1,6 @@
-bibliSymfony_base_accueil:
-    path:     /bienvenue
-    defaults: { _controller: BaseBundle:Default:bienvenue }
+bibliSymfony_base_login:
+    path:     /login
+    defaults: { _controller: BaseBundle:Default:login }
     
 bibliSymfony_base_users:
     path:     /users
@@ -9,7 +9,7 @@ bibliSymfony_base_users:
 bibliSymfony_base_location:
     path:     /{id}
     defaults: { _controller: BaseBundle:Default:gestionLocations }
-    
-bibliSymfony_base_login:
+
+bibliSymfony_base_accueil:
     path:     /
-    defaults: { _controller: BaseBundle:Default:login }
+    defaults: { _controller: BaseBundle:Default:bienvenue }

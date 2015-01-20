@@ -17,9 +17,30 @@
 }
 
 .user{
-	background:url(//localhost/templatesFini/assets/img/icons/user.gif) no-repeat 250px 1px;
+	//background:url(//localhost/templatesFini/assets/img/icons/user.gif) no-repeat 250px 1px;
 	text-indent:30px;
 	display:block;
+}
+
+.logominiature{
+    position:relative;
+    float:left;
+    padding:6px;
+    margin-top: 4px
+}
+
+.logo{
+    max-width: 100%;
+    //width:10%;
+    position:absolute;
+    float:left;
+    //margin-left: 21%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boiteLog{
+    margin-top: 25%;
 }
 
 .widget{
