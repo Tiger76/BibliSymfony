@@ -14,6 +14,14 @@ film_liste_ajout:
     path:     /ajoutFilm
     defaults: { _controller: FilmBundle:Default:ajoutFilm }
 
+film_categorie_ajout:
+    path:     /ajoutCategorie
+    defaults: { _controller: FilmBundle:Default:ajoutCategorie }
+
+film_categorie_supprime:
+    path:     /supprimeCategorie/{id}
+    defaults: { _controller: FilmBundle:Default:supprimeCategorie }
+
 film_supprimer:
     path:     /supprimer/{id}
     defaults: { _controller: FilmBundle:Default:supprimeFilm }
