@@ -2,6 +2,9 @@ film:
     resource: "@FilmBundle/Resources/config/routing.yml"
     prefix:   /films
 
+logout:
+    pattern:   /logout
+
 base:
     resource: "@BaseBundle/Resources/config/routing.yml"
     prefix:   /

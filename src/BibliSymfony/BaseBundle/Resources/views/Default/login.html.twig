@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('bundles/base/css/bootstrap.min.css') }}">
         <link type="text/css" rel="stylesheet" href="{{ asset('bundles/base/css/global.css') }}" />
         <link type="text/css" rel="stylesheet" href="{{ asset('bundles/base/css/color-button.css') }}" />
+        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/base/css/element.css') }}" />
 	<!-- js Boots_from -->
 	<script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -17,7 +18,8 @@
 <div class="wrapper-login">
 	<div class="container">
 		<div class="row">
-			<div class="login-content span4 offset4">
+                        <div class="logo"><img src="{{asset('bundles/base/images/logoimg.png')}}"/></div>
+			<div class="login-content span4 offset4 boiteLog">
 				<div class="header-login well">
 					<h3>Identification</h3>
 				</div>
@@ -32,7 +34,6 @@
 				</form>	
 			</div>
 		<div>
-                     <center><img src="{{asset('bundles/base/images/logoimg.png')}}" style="width:180px; height:231px; position:absolute; float:left; top:400px; left:670px"/></center>
 	</div>
 </div>
 </body>
