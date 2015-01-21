@@ -4,6 +4,7 @@ namespace BibliSymfony\FilmBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use BibliSymfony\FilmBundle\Entity\Film;
+use BibliSymfony\FilmBundle\Entity\Categorie;
 use Symfony\Component\Validator\Constraints\Date ;
 
 class DefaultController extends Controller
@@ -84,6 +85,35 @@ class DefaultController extends Controller
         $em->flush();
 
         return $this->redirect($this->generateUrl('film_liste'));
+    }
+
+    public function ajoutCategorieAction()
+    {
+        $categorie = new Categorie();
+        $categorie->setTitre($this->get('request')->request->get('Titre'));
+        $categorie->setDescription($this->get('request')->request->get('Description'));
+        $categorie->setImage('lienvideA_FAIRE');
+       
+               
+        
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($categorie);
+        $em->flush();
+
+        return $this->redirect($this->generateUrl('film_categorie'));
+    }
+
+    public function supprimeCategorieAction($id)
+    {
+        
+        // ATTENTION ici on supprime
+        $em = $this->getDoctrine()->getManager();
+        $categorie = $em->getRepository("FilmBundle:Categorie")->find($id);
+        $em->remove($categorie);
+        $em->flush();
+
+        
+        return $this->redirect($this->generateUrl('film_categorie'));
     }
 
     public function gestionDifBaAction()
