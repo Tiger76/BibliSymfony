@@ -34,9 +34,10 @@
     //width:10%;
     position:absolute;
     float:left;
+    top:540px;
     //margin-left: 21%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 400px;
+ 
 }
 
 .boiteLog{
