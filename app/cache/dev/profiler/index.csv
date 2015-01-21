@@ -1221,6 +1221,7 @@ d57c29,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/
 820819,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/js/custom.js,1421834251,
 ec3416,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/js/jquery.js,1421834252,f975dc
 f975dc,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/js/jquery.js,1421834252,
+<<<<<<< HEAD
 304582,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/categorie,1421834548,
 6ecda6,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/css/bootstrap.min.css,1421834549,b01603
 b01603,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/css/bootstrap.min.css,1421834549,
@@ -1727,3 +1728,6 @@ e0a02f,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/categor
 05cd55,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/categorie/assets/js/bootstrap.min.js,1421837473,
 414ed9,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/categorie/assets/js/jquery.js,1421837473,5fe8d2
 5fe8d2,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/categorie/assets/js/jquery.js,1421837473,
+=======
+648aab,::1,GET,https://localhost/BibliSymfony/web/app_dev.php/login,1421835591,
+>>>>>>> c7cde286d9648f0541daa5624bcbaec1230ea52d
