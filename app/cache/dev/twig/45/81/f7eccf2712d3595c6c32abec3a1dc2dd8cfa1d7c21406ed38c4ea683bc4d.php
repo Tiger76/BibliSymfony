@@ -115,7 +115,23 @@ class __TwigTemplate_4581f7eccf2712d3595c6c32abec3a1dc2dd8cfa1d7c21406ed38c4ea68
 \t\t\t\t\t\t\t\t\t\t</tbody>
 \t\t\t\t\t\t\t\t\t</table>
 \t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t      <div class=\"footer-table\">
+\t\t\t\t\t\t\t\t";
+        // line 63
+        if (twig_in_filter("error", $this->env->getExtension('routing')->getPath($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "attributes", array()), "get", array(0 => "_route"), "method"), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "attributes", array()), "get", array(0 => "_route_params"), "method")))) {
+            // line 64
+            echo "\t\t\t\t\t\t\t\t<div id=\"erreur\" class=\"visible\">
+\t\t\t\t\t\t\t\t\t<table class=\"table table-striped table-bordered table-condensed\">
+\t\t\t\t\t\t\t\t\t\t<tbody>
+\t\t\t\t\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t\t\t\t\t<td colspan= \"3\" id=\"caseAjout\"><a href=\"#\" onclick=\"\" class=\"button\"><span class=\"user\">Impossible de supprimer cette catégorie ! Des films sont encore liés à celle ci.</span></a></td></td>
+\t\t\t\t\t\t\t\t\t\t\t</tr>
+\t\t\t\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t\t\t\t</table>
+\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t";
+        }
+        // line 74
+        echo "\t\t\t\t\t\t      <div class=\"footer-table\">
 \t\t\t\t            \t<div class=\"navigation pagination pull-right\">
 \t\t\t\t\t\t\t\t\t<ul>
 \t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">←</a></li>
@@ -197,6 +213,6 @@ class __TwigTemplate_4581f7eccf2712d3595c6c32abec3a1dc2dd8cfa1d7c21406ed38c4ea68
 
     public function getDebugInfo()
     {
-        return array (  106 => 51,  96 => 47,  92 => 46,  88 => 45,  84 => 44,  80 => 43,  77 => 42,  73 => 41,  59 => 30,  31 => 4,  28 => 3,);
+        return array (  134 => 74,  122 => 64,  120 => 63,  106 => 51,  96 => 47,  92 => 46,  88 => 45,  84 => 44,  80 => 43,  77 => 42,  73 => 41,  59 => 30,  31 => 4,  28 => 3,);
     }
 }

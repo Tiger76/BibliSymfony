@@ -105,15 +105,29 @@ class DefaultController extends Controller
 
     public function supprimeCategorieAction($id)
     {
-        
-        // ATTENTION ici on supprime
-        $em = $this->getDoctrine()->getManager();
-        $categorie = $em->getRepository("FilmBundle:Categorie")->find($id);
-        $em->remove($categorie);
-        $em->flush();
+        // y a t'il des films dans cette categorie ?
+        $categorie =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Categorie")
+                ->findOneById($id);
 
+
+        // si pas de films dans la categorie
+        if ( count($categorie->getListeFilm()) < 1 )
+        {
+            // ATTENTION ici on supprime
+            $em = $this->getDoctrine()->getManager();
+            $categorie = $em->getRepository("FilmBundle:Categorie")->find($id);
+            $em->remove($categorie);
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('film_categorie', array('param' => 'ok')));
+        }
+        else //sinon on ne supprime pas et on appelle la page avec affichage de l'erreur
+        {
         
-        return $this->redirect($this->generateUrl('film_categorie'));
+            return $this->redirect($this->generateUrl('film_categorie', array('param' => 'error')));
+        }
+        
     }
 
     public function gestionDifBaAction()

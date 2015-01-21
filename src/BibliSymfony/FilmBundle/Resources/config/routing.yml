@@ -1,6 +1,6 @@
 film_categorie:
-    path:     /categorie
-    defaults: { _controller: FilmBundle:Default:categorieFilm }
+    path:     /categorie/{param}
+    defaults: { _controller: FilmBundle:Default:categorieFilm,param: ok}
     
 film_gestionBa:
     path:     /gestionBa

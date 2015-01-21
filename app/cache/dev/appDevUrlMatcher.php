@@ -129,8 +129,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         if (0 === strpos($pathinfo, '/films')) {
             // film_categorie
-            if ($pathinfo === '/films/categorie') {
-                return array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::categorieFilmAction',  '_route' => 'film_categorie',);
+            if (0 === strpos($pathinfo, '/films/categorie') && preg_match('#^/films/categorie(?:/(?P<param>[^/]++))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'film_categorie')), array (  '_controller' => 'BibliSymfony\\FilmBundle\\Controller\\DefaultController::categorieFilmAction',  'param' => 'ok',));
             }
 
             if (0 === strpos($pathinfo, '/films/ge')) {
