@@ -1221,3 +1221,4 @@ d57c29,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/
 820819,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/js/custom.js,1421834251,
 ec3416,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/js/jquery.js,1421834252,f975dc
 f975dc,::1,GET,http://localhost/symfo/BibliSymfony/web/app_dev.php/films/assets/js/jquery.js,1421834252,
+648aab,::1,GET,https://localhost/BibliSymfony/web/app_dev.php/login,1421835591,
