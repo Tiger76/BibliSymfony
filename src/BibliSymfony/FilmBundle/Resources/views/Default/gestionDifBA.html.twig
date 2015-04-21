@@ -45,7 +45,11 @@
                                     <td>{{info.titre}}</td>
                                     <td>{{info.idCategorie.titre}}</td>
                                     <td>{{info.description}}</td>
-                                    <td><input type="checkbox"></td>
+                                    {% if info.baDif == 1 %}
+                                        <td><input type="checkbox" checked></td>
+                                    {% else %}
+                                        <td><input type="checkbox"></td>
+                                    {% endif %}
                                 </tr>
 
                             {% endfor %}
@@ -63,32 +67,26 @@
                     </div>
                     <div class="box-wrapper span3">
                         <div class="title">
-                            <h3><a href="#">2 B-A choisies</a></h3>
+                            <h3><a href="#">B-A choisies</a></h3>
                         </div>
                         <table class="table table-striped table-bordered table-condensed">
 
                             <thead>
                                 <tr>
-                                    <th>Film</th>
+                                    <th>Liste Film</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                <tr>
-                                    <td><a href="#">rocky</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Robin</a></td>
-                                </tr>
-
+                                {% for info in listeFilms %}
+                                    {% if info.baDif == 1 %}
+                                        <tr>
+                                            <td>{{info.titre}}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
                             </tbody>
                         </table>
-                        <div class="navigation pagination pull-right">
-                            <ul>
-                                <li><a href="#">←</a></li>
-                                <li><a href="#">→</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div><!-- end container -->

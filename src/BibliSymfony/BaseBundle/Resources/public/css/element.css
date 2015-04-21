@@ -25,8 +25,9 @@
 .logominiature{
     position:relative;
     float:left;
-    padding:6px;
-    margin-top: 4px
+    padding:3px;
+    margin-top: 1px;
+    max-width: 34px;
 }
 
 .logo{
@@ -34,9 +35,9 @@
     //width:10%;
     position:absolute;
     float:left;
+    //top:540px;
     //margin-left: 21%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 400px;
 }
 
 .boiteLog{

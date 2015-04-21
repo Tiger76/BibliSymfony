@@ -13,7 +13,11 @@ class DefaultController extends Controller
     
     public function bienvenueAction()
     {
-        return $this->render('BaseBundle:Default:accueil.html.twig');
+        $film =  $this->getDoctrine()->getManager()
+                ->getRepository("FilmBundle:Film")
+                ->findAll();
+        
+        return $this->render('BaseBundle:Default:accueil.html.twig', array('film'=>$film));
     }
     
     public function gestionUtilisateursAction()

@@ -5,7 +5,7 @@ namespace BibliSymfony\FilmBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use BibliSymfony\FilmBundle\Entity\Film;
 use BibliSymfony\FilmBundle\Entity\Categorie;
-use Symfony\Component\Validator\Constraints\Date ;
+use Symfony\Component\Validator\Constraints\Date;
 
 class DefaultController extends Controller
 {

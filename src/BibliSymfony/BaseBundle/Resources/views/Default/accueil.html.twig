@@ -8,11 +8,10 @@
 				<div class="row">
 					<div id="widgetAccueil" class="widget">
 							<div class="Action">
-								<div class="title">
-                                                                    <center><h3><a href="#">Bienvenue</a></h3></center>
-                                                                    <center> on pourrait mettre un logo?</center>
-								</div>
-								
+                                                            <div class="title">
+                                                                <center><h3><a href="#">Bienvenue</a></h3></center>
+                                                                <center> on pourrait mettre un logo?</center>
+                                                            </div>
 							</div>
 					</div><!-- widget -->
 
@@ -47,44 +46,67 @@
 							</div>
 						</div>
 						<ul class="thumbnails thumbnails-horizontal">
-							
-							<li class="span3">
-								<div class="thumbnail border-radius-top">
-									<div class="bg-thumbnail-img">
-										<a class="overlay" href="detail.html">
-                                                                                    
-										</a>
-									
-									</div>
-									
-									<h5><a href="detail.html"> </a></h5>
-								</div>
-								<div class="box border-radius-bottom">
-									<p>
-										<span class="title_torrent pull-left">Titre du film</span>
-										<span class="number-view pull-right">prix jeton</span>
-									</p>
-								</div>
-							</li>
+							{% set cpt = 0 %}
+                                                        {% set lng = film|length %}
+                                                        {% for info in film %}
+                                                            {% set cpt = cpt + 1 %}
+                                                            
+                                                            {% if cpt > (lng - 2) %}
+                                                            <li class="span3">
+                                                                    <div class="thumbnail border-radius-top">
+                                                                        <div class="bg-thumbnail-img">
+                                                                        <a href="#">
+                                                                            <img src="{{ info.lienImage}}">
+                                                                        </a>
+                                                                        </div>
+                                                                        <h5><a href="detail.html"> </a></h5>
+                                                                    </div>
+                                                                    <div class="box border-radius-bottom">
+                                                                        <p>
+                                                                            <span class="title_torrent pull-left">{{ info.titre}}</span>
+                                                                            <span class="number-view pull-right">Prix: {{ info.tarif}}{% if info.tarif == 1 %} Jeton{% else %} Jetons{% endif %}</span>
+                                                                        </p>
+                                                                    </div>
+                                                            </li>
+                                                            {% endif %}
+                                                            <!--{#{% if loop.index == loop.length-1 %}
+                                                                <li class="span3">
+                                                                        <div class="thumbnail border-radius-top">
+                                                                                <div class="bg-thumbnail-img">
+                                                                                    <a href="#">
+                                                                                        <img src="{{ info.lienImage}}">
+                                                                                    </a>
+                                                                                </div>
 
-							<li class="span3">
-								<div class="thumbnail border-radius-top">
-									<div class="bg-thumbnail-img">
-										<a class="overlay" href="detail.html">
-											
-										</a>
-									
-									</div>
-									
-									<h5><a href="detail.html"> </a></h5>
-								</div>
-								<div class="box border-radius-bottom">
-									<p>
-										<span class="title_torrent pull-left">Titre du film</span>
-										<span class="number-view pull-right">prix jeton</span>
-									</p>
-								</div>
-							</li>
+                                                                                <h5><a href="detail.html"> </a></h5>
+                                                                        </div>
+                                                                        <div class="box border-radius-bottom">
+                                                                                <p>
+                                                                                        <span class="title_torrent pull-left">{{ info.titre}}</span>
+                                                                                        <span class="number-view pull-right">Prix: {{ info.tarif}}{% if info.tarif == 1 %} Jeton{% else %} Jetons{% endif %}</span>
+                                                                                </p>
+                                                                        </div>
+                                                                </li>
+                                                            {% elseif loop.index == loop.length %}
+                                                                <li class="span3">
+                                                                        <div class="thumbnail border-radius-top">
+                                                                                <div class="bg-thumbnail-img">
+                                                                                    <a href="#">
+                                                                                        <img src="{{ info.lienImage}}">
+                                                                                    </a>
+                                                                                </div>
+
+                                                                                <h5><a href="detail.html"> </a></h5>
+                                                                        </div>
+                                                                        <div class="box border-radius-bottom">
+                                                                                <p>
+                                                                                        <span class="title_torrent pull-left">{{ info.titre}}</span>
+                                                                                        <span class="number-view pull-right">Prix: {{ info.tarif}}{% if info.tarif == 1 %} Jeton{% else %} Jetons{% endif %}</span>
+                                                                                </p>
+                                                                        </div>
+                                                                </li>
+                                                            {% endif %}#}-->
+                                                        {% endfor %}
 						</ul>
 					</div><!-- end thumbnails-style1 -->
 				</div><!-- row -->
