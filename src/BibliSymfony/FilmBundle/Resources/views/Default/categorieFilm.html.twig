@@ -60,6 +60,17 @@
 										</tbody>
 									</table>
 								</div>
+								{% if 'error' in path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')) %}
+								<div id="erreur" class="visible">
+									<table class="table table-striped table-bordered table-condensed">
+										<tbody>
+											<tr>
+												<td colspan= "3" id="caseAjout"><a href="#" onclick="" class="button"><span class="user">Impossible de supprimer cette catégorie ! Des films sont encore liés à celle ci.</span></a></td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								{% endif %}
 						      <div class="footer-table">
 				            	<div class="navigation pagination pull-right">
 									<ul>
